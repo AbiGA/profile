@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #021f2e;
+    color: #f1b440;
+    font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    color: #f1b440;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}

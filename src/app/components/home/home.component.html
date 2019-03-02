@@ -1,0 +1,571 @@
+<div class="container-fluid" style="border-bottom: 1px solid black; position: relative;">
+    <div id="m_logo"><img style="width: 33%;" src="https://tip.agency/images/tiplogo_web.png"></div>
+    <div class="row top">
+      <div class="col-sm-2 menu">
+        <img style="width: 65%;" src="https://tip.agency/images/tiplogo_web.png">
+        <ul style="text-align:right; padding-top: 38%;">
+          <li style="font-size: 20px; margin: 5%; color: #f1b440;" id="menu1" (click)="sh1();">INTRO</li>
+          <li style="font-size: 20px; margin: 5%; color: #f1b440;" id="menu2" (click)="sh2();">AGENCY</li>
+          <li style="font-size: 20px; margin: 5%; color: #f1b440;" id="menu3" (click)="sh3();">TIP SESSIONS</li>
+          <li style="font-size: 20px; margin: 5%; color: #f1b440;" id="menu4" (click)="sh4();">PROJECTS</li>
+        </ul>
+      </div>
+      <!-- <div class="mobile-menu-text" id="mobile-menu-text"></div> -->
+      <div class="col-sm-10 menu-text" id="menu-text">
+          <div id="p1">
+              <p>TIP is home to clean, contemporary design. We work with you to understand your business,
+                  needs and goals, and deploy our design expertise to help your brand get to where it should 
+                  be. We believe in clarity in messaging, to attract and retain the right kind of attention.
+                  We cut through the clutter in today’s over-saturated marketing landscape through effective
+                  and intuitive design. 
+               </p>
+               <p>At TIP, we are a lean, efficient team, with a wide range of expertise, that brings you bold,
+                  intuitive design, that is backed by a solid foundation of research. Work with us for smart,
+                  direct and collaborative design and marketing that helps you carve out the right space for
+                  your brand.
+               </p>
+          </div>
+          <div id="p2">
+              <p>
+                  TIP was set up with the aim of making clean, modern design accessible to all, especially
+                  in the fast-maturing Indian market. Having studied and worked in design and marketing in
+                  the US, founder and CEO, Divya Hegde founded TIP with the aim to plug the vacuum for good
+                  contemporary design in India. TIP focuses on uncompromising quality, intuitive and purposeful
+                  design, based on contemporary design principles and navigating digital marketing based on a
+                  keen practical awareness of the digital landscape
+              </p>
+          </div>
+          <div id="p3">
+              <p>
+                  At TIP, we believe that design is not just for companies, but for society. TIP Sessions is an
+                  integral part of our two-pronged strategy to spark change in social attitudes, where we leverage
+                  our skills and privilege as young, urban designers to make a real, measurable impact in society,
+                  on issues that matter.
+              </p>
+              <p>
+                  TIP Sessions is a forum for action on local issues that are addressed through intelligent design
+                  and targeted, local action. The goal is to bring together relevant stakeholders - be they
+                  government officials, academics, NGOs, expert bodies, and most importantly, the community - to
+                  facilitate a meaningful exchange of information and solutions that are actionable at the local
+                  level that create exponential knock-on effect in the community.
+                  <span id="readspan" (click)="readmore();">Read More</span>
+              </p>
+              <p id="readmore">
+                  Our ongoing initiative, TIP Sessions: Coastal Edit focuses on issues that affect communities in
+                  Coastal Karnataka, including water conservation, climate change, sustainable fishing practices,
+                  etc. while researching and working to introduce practices at the individual and community level
+                  that help to tilt the delicate ecological balance in Karnataka’s coastal belt towards greater
+                  sustainability.
+              </p>
+          </div>
+          <div id="p4">
+              <p>
+                  TIP was set up with the aim of making clean, modern design accessible to all, especially
+                  in the fast-maturing Indian market. Having studied and worked in design and marketing in
+                  the US, founder and CEO, Divya Hegde founded TIP with the aim to plug the vacuum for good
+                  contemporary design in India. TIP focuses on uncompromising quality, intuitive and purposeful
+                  design, based on contemporary design principles and navigating digital marketing based on a
+                  keen practical awareness of the digital landscape
+              </p>
+          </div>
+          <!-- <div style="position: absolute; bottom: 0; right: 0; width: 250px;"><p>&quot;Bold intuitive design backed by a solid foundation of research&quot;</p></div> -->
+        </div>
+    </div>
+    <!-- <div class="projects_box">
+      <p>PROJECTS</p>
+    </div> -->
+</div>
+<div class="container-fluid" id="mobile_p">
+  <div class="row">
+    <div class="col-sm-12">
+        <ul style="display: -webkit-inline-box">
+            <li style="font-size: 18px; margin: 5%;" id="intro" (click)="msh1();">INTRO</li>
+            <li style="font-size: 18px; margin: 5%; color: #f1b440;" id="agency" (click)="msh2();">AGENCY</li>
+            <li style="font-size: 18px; margin: 5%; color: #f1b440;" id="tip" (click)="msh3();">TIP SESSIONS</li>
+            <!-- <li style="font-size: 18px; margin: 5%; color: #f1b440;" id="projects" (click)="msh3();">Projects</li> -->
+          </ul>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col" style="padding:10%; padding-top:0;padding-bottom:2%;">
+          <div id="mp1">
+            <p>TIP is home to clean, contemporary design. We work with you to understand your business,
+                needs and goals, and deploy our design expertise to help your brand get to where it should 
+                be. We believe in clarity in messaging, to attract and retain the right kind of attention.
+                We cut through the clutter in today’s over-saturated marketing landscape through effective
+                and intuitive design. 
+             </p>
+             <p>At TIP, we are a lean, efficient team, with a wide range of expertise, that brings you bold,
+                intuitive design, that is backed by a solid foundation of research. Work with us for smart,
+                direct and collaborative design and marketing that helps you carve out the right space for
+                your brand.
+             </p>
+        </div>
+        <div id="mp2">
+            <p>
+                TIP was set up with the aim of making clean, modern design accessible to all, especially
+                in the fast-maturing Indian market. Having studied and worked in design and marketing in
+                the US, founder and CEO, Divya Hegde founded TIP with the aim to plug the vacuum for good
+                contemporary design in India. TIP focuses on uncompromising quality, intuitive and purposeful
+                design, based on contemporary design principles and navigating digital marketing based on a
+                keen practical awareness of the digital landscape
+            </p>
+        </div>
+        <div id="mp3">
+            <p>
+                At TIP, we believe that design is not just for companies, but for society. TIP Sessions is an
+                integral part of our two-pronged strategy to spark change in social attitudes, where we leverage
+                our skills and privilege as young, urban designers to make a real, measurable impact in society,
+                on issues that matter.
+            </p>
+            <p>
+                TIP Sessions is a forum for action on local issues that are addressed through intelligent design
+                and targeted, local action. The goal is to bring together relevant stakeholders - be they
+                government officials, academics, NGOs, expert bodies, and most importantly, the community - to
+                facilitate a meaningful exchange of information and solutions that are actionable at the local
+                level that create exponential knock-on effect in the community.
+            </p>
+            <p>
+                Our ongoing initiative, TIP Sessions: Coastal Edit focuses on issues that affect communities in
+                Coastal Karnataka, including water conservation, climate change, sustainable fishing practices,
+                etc. while researching and working to introduce practices at the individual and community level
+                that help to tilt the delicate ecological balance in Karnataka’s coastal belt towards greater
+                sustainability.
+            </p>
+        </div>
+        </div>
+  </div>
+
+</div>
+  <div class="container-fluid capabilities" style="padding: 5%;">
+    <div class="row">
+      <div class="col capabilities_header"><h3>CAPABILITIES</h3></div>
+    </div>
+    <div class="row">
+        <div class="col" id="intro"><p class="cap_intro" style="color: #f1b440;">
+            We craft branding, design, social media and marketing solutions, powered by a bold, experimental
+            approach, that translate the actual business goals of the client into a reality. We believe in
+            fully understanding our clients’ needs, and designing solutions that are collaborative, user-friendly
+            and based on in-depth contextual research.
+        </p></div>
+    </div>
+    <div id="rw1" class="row">
+        <div (click)="cap1();" class="col-6 col-sm-4">
+          <img src="../../../assets/capabilities/Branding.png" style="width: 100%;">
+          <h6>BRANDING</h6>
+        </div>
+        <div (click)="cap2();" class="col-6 col-sm-4">
+          <img src="../../../assets/capabilities/Strategy.png" style="width: 100%;">
+          <h6>STRATEGY</h6>
+        </div>
+        <div (click)="cap3();" class="col-6 col-sm-4">
+          <img src="../../../assets/capabilities/Website development.png" style="width: 100%;">
+          <h6>WEBSITE DESIGN<br/>& DEVELOPMENT</h6>
+        </div>
+               <div (click)="cap4();" class="col-6 col-sm-4">
+          <img src="../../../assets/capabilities/Film and Graphic.png" style="width: 100%;">
+          <h6>FILM & GRAPHICS</h6>
+        </div>
+        <div (click)="cap5();" class="col-6 col-sm-4">
+          <img src="../../../assets/capabilities/Content.png" style="width: 100%;">
+          <h6>CONTENT</h6>
+        </div>
+        <div (click)="cap6();" class="col-6 col-sm-4">
+          <img src="../../../assets/capabilities/Print and Packaging.png" style="width: 100%;">
+          <h6>PRINT &<br/>PACKAGING</h6>
+        </div>
+        <div class="col-6 col-sm-4">
+            <img src="../../../assets/capabilities/Gamification.png" style="width: 100%;">
+            <h6>GAMIFICATION</h6>
+        </div>
+        <div class="col-6 col-sm-4">
+            <img src="../../../assets/capabilities/Illustration.png" style="width: 100%;">
+            <h6>ILLUSTRATION</h6>
+        </div>
+        <div class="col-6 col-sm-4">
+            <img src="../../../assets/capabilities/Searchsocial.png" style="width: 100%;">
+            <h6>SEARCH &<br/>SOCIAL MEDIA</h6>
+        </div>
+    </div>
+    <div id="cap1" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+              <img style="width:100%;" src="../../../assets/capabilities/Branding.png">
+              <h4 style="color: #f1b440; font-size: 18px;">BRANDING</h4>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+                <h6 style="color: #f1b440; margin-left: -20%;">WHAT'S IN A NAME? EVERYTHING</h6>
+                <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+                  We’ll help you stand out in the crowd by creating a memorable brand identity – down
+                  to the look, feel and emotions you evoke in your customers and importantly, where
+                  you want your brand to go. Our specialists will work with you to create a holistic
+                  brand identity that includes logos, websites, content, packaging and a unique visual
+                  language that lines up with your business goals.
+                </p>
+                <span (click)="open1()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="cap2" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+                <img style="width: 100%;" src="../../../assets/capabilities/Strategy.png">
+                <h4 style="color: #f1b440; font-size: 18px;">STRATEGY</h4>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+                <h6 style="color: #f1b440;">“Strategy 101 is about choices: you can’t be all things
+                                                   to all people.” - Michael Porter</h6>
+                <p style="text-align: justify; font-size: 14px;
+                width: 80%;
+                margin: 0 auto;">With brand strategy, we ask the tough questions, and help you find the right answers.
+                   Based on in-depth research into sectors and market trends, we’ll help you cut through
+                   the clutter to craft a strong, coherent strategy that tells your unique story. We
+                   discover what makes you tick - your values, your goals, your skills (as well as your
+                   competition), to map out a journey that will get you where you want to be. 
+                </p>
+                <span (click)="open2()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div id="cap3" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+                <img style="width: 100%;" src="../../../assets/capabilities/Website development.png">
+                <h4 style="color: #f1b440; font-size: 18px;">WEBSITE & SOFTWARE DESIGN</h4>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+                <h6 style="color: #f1b440;">They say the internet never forgets. We’ll make sure
+                                                  you’re remembered for all the right reasons. </h6>
+                <p style="text-align: justify; font-size: 14px;
+                width: 80%;
+                margin: 0 auto;">With catchy content, nifty web and mobile apps, and search engine optimization to grab
+                   the right set of eyeballs for your business, we’ll help mold your online presence to make
+                   it fun, user-friendly, intuitive and above all, functional.
+                </p>
+                <span (click)="open3()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div id="cap4" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+                <img style="width: 100%;" src="../../../assets/capabilities/Film and Graphic.png">
+                <h4 style="color: #f1b440; font-size: 18px;">GRAPHICS & VIDEO</h4>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+                <h6 style="color: #f1b440;">A picture speaks a thousand words - especially when it moves!</h6>
+                <p style="text-align: justify;font-size: 14px;
+                width: 80%;
+                margin: 0 auto;">We create illustrations, ad films and animations that inject life into your brand, and leverage
+                   the power of visuals to create the right kind of impact for your company.
+                </p>
+                <span (click)="open4()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div id="cap5" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+                <img style="width: 100%;" src="../../../assets/capabilities/Content.png">
+                <h4 style="color: #f1b440; font-size: 18px;">CONTENT WRITING</h4>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+                <h6 style="color: #f1b440;font-size: 14px;
+                width: 80%;
+                margin: 0 auto;">It’s not what you say, but how you say it.</h6>
+                <p style="text-align: justify;">We help you harness the power of the written word to make sure your messaging is on
+                   point and to the point.
+                </p>
+                <span (click)="open5()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div id="cap6" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+                <img style="width: 100%;" src="../../../assets/capabilities/Print and Packaging.png">
+                <h4 style="color: #f1b440; font-size: 18px;">PRINT & PACKAGING</h4>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+                <h6 style="color: #f1b440;font-size: 14px;
+                width: 80%;
+                margin: 0 auto;">Never judge a book by its cover? Yeah, right!</h6>
+                <p style="text-align: justify;">We know the importance of a great first impression and create eye-catching packaging
+                   and brand collaterals with a refined, modern aesthetic that reflects product excellence,
+                   both on the inside and the outside!
+                </p>
+                <span (click)="open6()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+<div class="container-fluid" style="padding-left: 0; padding-right: 0; position: relative;">
+  <h3 style="padding-left: 15%;">FEATURED</h3>
+  <div class="featuredbox">
+    <span style="font-weight: 600;">GOOD DESIGN IS OUR EXPERTISE.</span>
+    <p style="font-size: 12px;">Within the first 5 years of its existence, tip has worked with
+      companies in real estate, fisheries , cosmetics, food & beverages, hospitality, executive
+      coaching, tea & coffee estates, renewable energy, and many, many more. 
+    </p>
+    <p style="font-size: 12px;">
+        We apply our methodology to your brand and industry, which reflects in the range of
+        sectors that we have designed for.
+    </p>
+  </div>
+    <div class="row" style="padding-top: 3%;">
+        <div class="col">
+            <marquee class="marquee1" behavior="scroll"  scrollamount="10" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Crafted-Trips-co_BIG.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/House-of-Satori_Big.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Lancome_BIG.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Kingfisher_Big.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Kandavara_Big.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Sarayu-Savya_Sachi_Big.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Nizanta.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Savya-Sachi_Big.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Thiashola_Big.png">  
+            </marquee>
+            <marquee style="margin-top: -0.8%;" class="marquee2" behavior="scroll"  scrollamount="15" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Crafted-Trips-co_small.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Kingfisher_small.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/HouseofSatori.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Lancome_small.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Kandavara_small.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Nizanta_Small.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Sarayu_savyasachi_Small.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/SavyaSachi_small.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/SevenBeans_small.png">
+                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Thiashola-small.png">
+              </marquee>
+        </div>
+      </div>
+</div>
+  <div class="container-fluid" style="padding-top: 5%;">
+    <div class="row" style="text-align: center; font-variant-caps: all-petite-caps;">
+      <div class="col">
+          <h3>Here are our select clients that can be chosen according to categories</h3>
+      </div>
+    </div>
+    <div class="row categories" style="padding-top: 1%;">
+        <div class="col" style="text-align: center; font-size: 12px;padding-left: 2%;padding-right: 2%;">
+            <ul id="myUL1">
+              <li style="border-right: none;">SERVICE : </li>
+              <li (click)="search('images')">ALL</li>
+              <li (click)="search('branding')">BRANDING</li>
+              <li (click)="search('strategy')">STRATEGY</li>
+              <li (click)="search('website')">WEBSITE DEVELOPMENT</li>
+              <!-- <li (click)="search('film')">FILM AND GRAPHICS</li> -->
+              <li (click)="search('illustration')">ILLUSTRATION</li>
+              <li (click)="search('gamification')">GAMIFICATION</li>
+              <li (click)="search('print')">PRINT & PACKAGING</li>
+              <li (click)="search('content')">CONTENT</li>
+              <li (click)="search('search')">SEARCH & SOCIAL MEDIA</li>
+              <li (click)="search('software')" style="border-right: none;">SOFTWARE DEVELOPMENT</li>
+            </ul>
+        </div>
+      </div>
+      <div class="row category_dropdown" style="padding-top: 1%;">
+          <div class="col" style="text-align: center; font-size: 12px;padding-left: 2%;padding-right: 2%;">
+             <select (change)="search1($event);" [value]='images' id="sel">
+               <option value="images">ALL</option>
+               <option value="branding">BRANDING</option>
+               <option value="strategy">STRATEGY</option>
+               <option value="website">WEBSITE DEVELOPMENT</option>
+               <option value="illustration">ILLUSTRATION</option>
+               <option value="gamification">GAMIFICATION</option>
+               <option value="print">PRINT & PACKAGING</option>
+               <option value="content">CONTENT</option>
+               <option value="search">SEARCH & SOCIAL MEDIA</option>
+               <option value="software">SOFTWARE DEVELOPMENT</option>
+             </select>
+          </div>
+        </div>
+      <ul id="myUL">
+          <li><img class="images strategy website" title="Thiashola" src="../../../assets/search/Thiashola.png"></li>
+          <li><img class="images branding content" title="Noetic step" src="../../../assets/search/noetic-step.png"></li>
+        
+          <li><img class="images illustration print" title="Ipseand" src="../../../assets/search/Ipseand.png"></li>
+          <li> <img class="images content" title="olive-energy" src="../../../assets/search/olive-energy.png"></li>
+        
+          <li><img class="images website" title="savyasachi-sarayu" src="../../../assets/search/savyasachi-sarayu.png"></li>
+          <li><img class="images branding" title="SelectHer step" src="../../../assets/search/selecther.png"></li>
+
+          <li><img class="images website" title="seven-beans" src="../../../assets/search/seven-beans.png"></li>
+
+          <li><img class="images content" title="Botama" src="../../../assets/search/botama.png"></li>
+          <li><img class="images gamification" title="Election Commision" src="../../../assets/search/Election-Commission-of-India.png"></li>
+
+          <li><img class="images content" title="Crafted Holidays" src="../../../assets/search/Crafted-Holidays.png"></li>
+          <li><img class="images content website strategy" title="Karnataka Gov" src="../../../assets/search/goverment-of-karnataka.png"></li>
+
+          <li><img class="images print" title="Jantha Group" src="../../../assets/search/Janatha-Group.png"></li>
+          <li><img class="images print" title="Jus Amazin" src="../../../assets/search/jus-amazin.png"></li>
+
+          <li><img class="images strategy search illustration" title="Lake View" src="../../../assets/search/lakeview.png"></li>
+          <li><img class="images search" title="kandavara" src="../../../assets/search/Kandavara.png"></li>
+
+          <li><img class="images strategy search" title="Kingfisher" src="../../../assets/search/kingfisher.png"></li>
+          <li><img class="images software" title="Lancome" src="../../../assets/search/Lancome.png"></li>
+
+          <li><img class="images search" title="Leeco" src="../../../assets/search/leeco.png"></li>
+          <li><img class="images illustration" title="Mallet" src="../../../assets/search/Mallet.png"></li>
+
+          <li><img class="images search" title="Leeco" src="../../../assets/search/leeco.png"></li>
+          <li><img class="images gamification" title="Madhuram" src="../../../assets/search/madhuram.png"></li>
+
+          <li><img class="images gamification" title="Mission-Happiness" src="../../../assets/search/Mission-Happiness.png"></li>
+          <li><img class="images print branding" title="Savyasachi" src="../../../assets/search/savyasachi.png"></li>
+
+          <li><img class="images strategy illustration" title="Udupi Tourism" src="../../../assets/search/Udupi-tourism.png"></li>
+
+        </ul>
+  </div>
+
+  <!-- <div class="container-fluid" style="padding: 0;">
+      <div class="row" style="padding: 1%;">
+          <div class="col">
+              <input type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
+  
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:60%;">E-Commerce</th>
+      <th style="width:40%;">B2B</th>
+      <th style="width:40%;">Retail</th>
+      <th style="width:40%;">F&B</th>
+      <th style="width:40%;">Travel</th>
+      <th style="width:40%;">Consultancy</th>
+      <th style="width:40%;">Social Impact</th>
+      <th style="width:40%;">Real Estate</th>
+      <th style="width:40%;">Fashion</th>
+      <th style="width:40%;">Healthcare</th>
+    </tr>
+    <tr>
+      <td>Thiashola</td>
+      <td>Janata</td>
+      <td>SelectHer</td>
+      <td>Huda Bar</td>
+      <td>Kandavara</td>
+      <td>Noetic Step</td>
+      <td>SelectHer</td>
+      <td>Savyasachi</td>
+      <td>Nizanta</td>
+      <td>Sanjay Gandhi</td>
+    </tr>
+    <tr>
+        <td>Seven Beans</td>
+        <td>Malpe Fresh</td>
+        <td>Mallet</td>
+        <td>Kingfisher</td>
+        <td>Crafted Holidays</td>
+        <td>Shetty & Hegde</td>
+        <td>Akshara</td>
+        <td>Sarayu</td>
+        <td>House of Satori</td>
+        <td></td>
+      </tr>
+      <tr>
+          <td>Mallet</td>
+          <td>Leo Cements</td>
+          <td>Wood & Metal</td>
+          <td>Django</td>
+          <td>Crafted Trips</td>
+          <td>White Beard</td>
+          <td>KSWDC</td>
+          <td>Siddhartha Ventures</td>
+          <td>Ipseand</td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>Ipseand</td>
+            <td>Olive Energy</td>
+            <td>Ipseand</td>
+            <td>CC</td>
+            <td>Halli Berri</td>
+            <td>Amit Barde - personal website</td>
+            <td>Olive Energy</td>
+            <td>Rosebay</td>
+            <td>Botama</td>
+            <td></td>
+          </tr>
+          <tr>
+              <td>Wood & Metal</td>
+              <td>Nandi Hospitality</td>
+              <td>Le Eco</td>
+              <td>Thiashola</td>
+              <td>Udupi Tourism</td>
+              <td></td>
+              <td></td>
+              <td>World City</td>
+              <td>[New Fashion brand - Simran]</td>
+              <td></td>
+            </tr>
+            <tr>
+                <td>House of Satori</td>
+                <td>Ipseand</td>
+                <td>Locally Groomed</td>
+                <td>Seven Beans</td>
+                <td>White Lotus</td>
+                <td></td>
+                <td></td>
+                <td>Nestates</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                  <td>Nizanta</td>
+                  <td>Olelo </td>
+                  <td></td>
+                  <td>Lakeview</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td>Botama</td>
+                    <td></td>
+                    <td></td>
+                    <td>Whitebeard</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                      <td>Locally Groomed</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+  </table>
+       </div>
+      </div>
+  </div> -->
