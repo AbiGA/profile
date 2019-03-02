@@ -88,7 +88,6 @@ search (c) {
 search1 (event: any) {
   var c: string = '';
   c= event.target.value;
-  alert(c);
   var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("txt-search");
     filter = c.toLowerCase();

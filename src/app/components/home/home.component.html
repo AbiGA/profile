@@ -189,11 +189,12 @@
     </div>
     <div id="cap1" class="row" style="padding: 2%; text-align: center; position: relative;">
         <div class="col">
-          <div class="row" style="width: 65%;
+          <div class="row popup_row" style="width: 65%;
           height: 350px; background-color: #5d3443; margin: 0 auto;">
-            <div class="col-sm-4 icon">
+            <div class="col-sm-4 icon" style="position: relative;">
               <img style="width:100%;" src="../../../assets/capabilities/Branding.png">
               <h4 style="color: #f1b440; font-size: 18px;">BRANDING</h4>
+              <span (click)="open1()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
                 <h6 style="color: #f1b440; margin-left: -20%;">WHAT'S IN A NAME? EVERYTHING</h6>
@@ -204,21 +205,23 @@
                   brand identity that includes logos, websites, content, packaging and a unique visual
                   language that lines up with your business goals.
                 </p>
-                <span (click)="open1()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+                <span class="span_desk" (click)="open1()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
             </div>
           </div>
         </div>
     </div>
     <div id="cap2" class="row" style="padding: 2%; text-align: center; position: relative;">
         <div class="col">
-          <div class="row" style="width: 65%;
+          <div class="row popup_row" style="width: 65%;
           height: 350px; background-color: #5d3443; margin: 0 auto;">
             <div class="col-sm-4 icon">
                 <img style="width: 100%;" src="../../../assets/capabilities/Strategy.png">
                 <h4 style="color: #f1b440; font-size: 18px;">STRATEGY</h4>
+                <span (click)="open2()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;">“Strategy 101 is about choices: you can’t be all things
+                <h6 style="color: #f1b440;padding-left: 5%;
+                padding-right: 10%;">“Strategy 101 is about choices: you can’t be all things
                                                    to all people.” - Michael Porter</h6>
                 <p style="text-align: justify; font-size: 14px;
                 width: 80%;
@@ -228,21 +231,23 @@
                    discover what makes you tick - your values, your goals, your skills (as well as your
                    competition), to map out a journey that will get you where you want to be. 
                 </p>
-                <span (click)="open2()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+                <span (click)="open2()" class="span_desk" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
               </div>
           </div>
         </div>
     </div>
     <div id="cap3" class="row" style="padding: 2%; text-align: center; position: relative;">
         <div class="col">
-          <div class="row" style="width: 65%;
+          <div class="row popup_row" style="width: 65%;
           height: 350px; background-color: #5d3443; margin: 0 auto;">
             <div class="col-sm-4 icon">
                 <img style="width: 100%;" src="../../../assets/capabilities/Website development.png">
                 <h4 style="color: #f1b440; font-size: 18px;">WEBSITE & SOFTWARE DESIGN</h4>
+                <span (click)="open3()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;">They say the internet never forgets. We’ll make sure
+                <h6 style="color: #f1b440;padding-left: 7%;
+                padding-right: 7%;">They say the internet never forgets. We’ll make sure
                                                   you’re remembered for all the right reasons. </h6>
                 <p style="text-align: justify; font-size: 14px;
                 width: 80%;
@@ -250,75 +255,98 @@
                    the right set of eyeballs for your business, we’ll help mold your online presence to make
                    it fun, user-friendly, intuitive and above all, functional.
                 </p>
-                <span (click)="open3()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+                <span (click)="open3()" class="span_desk" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
               </div>
           </div>
         </div>
     </div>
     <div id="cap4" class="row" style="padding: 2%; text-align: center; position: relative;">
         <div class="col">
-          <div class="row" style="width: 65%;
+          <div class="row popup_row4" style="width: 65%;
           height: 350px; background-color: #5d3443; margin: 0 auto;">
             <div class="col-sm-4 icon">
                 <img style="width: 100%;" src="../../../assets/capabilities/Film and Graphic.png">
                 <h4 style="color: #f1b440; font-size: 18px;">GRAPHICS & VIDEO</h4>
+                <span (click)="open4()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;">A picture speaks a thousand words - especially when it moves!</h6>
+                <h6 style="color: #f1b440;padding-left: 10%;
+                padding-right: 10%;">A picture speaks a thousand words - especially when it moves!</h6>
                 <p style="text-align: justify;font-size: 14px;
                 width: 80%;
                 margin: 0 auto;">We create illustrations, ad films and animations that inject life into your brand, and leverage
                    the power of visuals to create the right kind of impact for your company.
                 </p>
-                <span (click)="open4()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+                <span (click)="open4()" class="span_desk" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
               </div>
           </div>
         </div>
     </div>
     <div id="cap5" class="row" style="padding: 2%; text-align: center; position: relative;">
+      <div class="col">
+        <div class="row popup_row5" style="width: 65%;
+        height: 350px; background-color: #5d3443; margin: 0 auto;">
+          <div class="col-sm-4 icon" style="position: relative;">
+            <img style="width:100%;" src="../../../assets/capabilities/Content.png">
+            <h4 style="color: #f1b440; font-size: 18px;">CONTENT WRITING</h4>
+            <span (click)="open5()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
+          </div>
+          <div class="col-sm-8 popup" style="position: relative;">
+            <h6 style="color: #f1b440; padding-right: 12%;">It’s not what you say, but how you say it.</h6>
+            <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+              We help you harness the power of the written word to make sure your messaging is on
+               point and to the point.
+            </p>
+            <span class="span_desk" (click)="open5()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+        </div>
+        </div>
+      </div>
+  </div>
+    <!-- <div id="cap5" class="row" style="padding: 2%; text-align: center; position: relative;">
         <div class="col">
-          <div class="row" style="width: 65%;
+          <div class="row popup_row5" style="width: 65%;
           height: 350px; background-color: #5d3443; margin: 0 auto;">
             <div class="col-sm-4 icon">
                 <img style="width: 100%;" src="../../../assets/capabilities/Content.png">
                 <h4 style="color: #f1b440; font-size: 18px;">CONTENT WRITING</h4>
+                <span (click)="open5()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;font-size: 14px;
+                <h6 style="color: #f1b440;
                 width: 80%;
                 margin: 0 auto;">It’s not what you say, but how you say it.</h6>
                 <p style="text-align: justify;">We help you harness the power of the written word to make sure your messaging is on
                    point and to the point.
                 </p>
-                <span (click)="open5()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+                <span (click)="open5()" class="span_desk" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
               </div>
           </div>
         </div>
-    </div>
+    </div> -->
     <div id="cap6" class="row" style="padding: 2%; text-align: center; position: relative;">
         <div class="col">
-          <div class="row" style="width: 65%;
+          <div class="row popup_row6" style="width: 65%;
           height: 350px; background-color: #5d3443; margin: 0 auto;">
             <div class="col-sm-4 icon">
                 <img style="width: 100%;" src="../../../assets/capabilities/Print and Packaging.png">
                 <h4 style="color: #f1b440; font-size: 18px;">PRINT & PACKAGING</h4>
+                <span (click)="open6()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;font-size: 14px;
-                width: 80%;
-                margin: 0 auto;">Never judge a book by its cover? Yeah, right!</h6>
-                <p style="text-align: justify;">We know the importance of a great first impression and create eye-catching packaging
+              <h6 style="color: #f1b440; padding-right: 10%; padding-left: 4%;">Never judge a book by its cover? Yeah, right!</h6>
+              <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+                   We know the importance of a great first impression and create eye-catching packaging
                    and brand collaterals with a refined, modern aesthetic that reflects product excellence,
                    both on the inside and the outside!
-                </p>
-                <span (click)="open6()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
-              </div>
+              </p>
+              <span class="span_desk" (click)="open6()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+          </div>
           </div>
         </div>
     </div>
   </div>
 <div class="container-fluid" style="padding-left: 0; padding-right: 0; position: relative;">
-  <h3 style="padding-left: 15%;">FEATURED</h3>
+  <h3 style="padding-left: 15%;" class="featured_text">FEATURED</h3>
   <div class="featuredbox">
     <span style="font-weight: 600;">GOOD DESIGN IS OUR EXPERTISE.</span>
     <p style="font-size: 12px;">Within the first 5 years of its existence, tip has worked with
@@ -361,13 +389,13 @@
   <div class="container-fluid" style="padding-top: 5%;">
     <div class="row" style="text-align: center; font-variant-caps: all-petite-caps;">
       <div class="col">
-          <h3>Here are our select clients that can be chosen according to categories</h3>
+          <h3 style="text-align: initial;">Here are our select clients that can be chosen according to categories</h3>
       </div>
     </div>
     <div class="row categories" style="padding-top: 1%;">
         <div class="col" style="text-align: center; font-size: 12px;padding-left: 2%;padding-right: 2%;">
             <ul id="myUL1">
-              <li style="border-right: none;">SERVICE : </li>
+              <li style="border-right: none;">SERVICES : </li>
               <li (click)="search('images')">ALL</li>
               <li (click)="search('branding')">BRANDING</li>
               <li (click)="search('strategy')">STRATEGY</li>
@@ -384,8 +412,8 @@
       </div>
       <div class="row category_dropdown" style="padding-top: 1%;">
           <div class="col" style="text-align: center; font-size: 12px;padding-left: 2%;padding-right: 2%;">
-             <select (change)="search1($event);" [value]='images' id="sel">
-               <option value="images">ALL</option>
+             <select (change)="search1($event);" id="sel">
+               <option selected value="images">ALL</option>
                <option value="branding">BRANDING</option>
                <option value="strategy">STRATEGY</option>
                <option value="website">WEBSITE DEVELOPMENT</option>
@@ -428,7 +456,6 @@
           <li><img class="images search" title="Leeco" src="../../../assets/search/leeco.png"></li>
           <li><img class="images illustration" title="Mallet" src="../../../assets/search/Mallet.png"></li>
 
-          <li><img class="images search" title="Leeco" src="../../../assets/search/leeco.png"></li>
           <li><img class="images gamification" title="Madhuram" src="../../../assets/search/madhuram.png"></li>
 
           <li><img class="images gamification" title="Mission-Happiness" src="../../../assets/search/Mission-Happiness.png"></li>
