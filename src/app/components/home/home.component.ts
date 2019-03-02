@@ -19,6 +19,16 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     $(document).ready(function(){
       $(function() {
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("arrow").style.display = "block";
+  } else {
+    document.getElementById("arrow").style.display = "none";
+  }
+}
+
         var body = $('.menu-text');
         var backgrounds;
         function detect(x) {
@@ -34,7 +44,8 @@ export class HomeComponent implements OnInit {
               );
           }
         }
-    
+
+
           var x = window.matchMedia("(max-width: 700px)")
           detect(x) // Call listener function at run time
           x.addListener(detect) // Attach listener function on state changes
@@ -238,12 +249,12 @@ w3RemoveClass(element, name) {
     document.getElementById("p1").style.display="block";
     document.getElementById("p2").style.display="none";
     document.getElementById("p3").style.display="none";
-    document.getElementById("p4").style.display="none";
+  //  document.getElementById("p4").style.display="none";
 
     document.getElementById("menu1").style.opacity="1";
     document.getElementById("menu2").style.opacity="0.5";
     document.getElementById("menu3").style.opacity="0.5";
-    document.getElementById("menu4").style.opacity="0.5";
+  //  document.getElementById("menu4").style.opacity="0.5";
 
     document.getElementById("readspan").style.display="block";
     document.getElementById("readmore").style.display="none";
@@ -252,12 +263,12 @@ w3RemoveClass(element, name) {
     document.getElementById("p1").style.display="none";
     document.getElementById("p2").style.display="block";
     document.getElementById("p3").style.display="none";
-    document.getElementById("p4").style.display="none";
+  //  document.getElementById("p4").style.display="none";
 
     document.getElementById("menu1").style.opacity="0.5";
     document.getElementById("menu2").style.opacity="1";
     document.getElementById("menu3").style.opacity="0.5";
-    document.getElementById("menu4").style.opacity="0.5";
+   // document.getElementById("menu4").style.opacity="0.5";
     document.getElementById("readspan").style.display="block";
     document.getElementById("readmore").style.display="none";
   }
@@ -265,12 +276,12 @@ w3RemoveClass(element, name) {
     document.getElementById("p1").style.display="none";
     document.getElementById("p2").style.display="none";
     document.getElementById("p3").style.display="block";
-    document.getElementById("p4").style.display="none";
+   // document.getElementById("p4").style.display="none";
 
     document.getElementById("menu1").style.opacity="0.5";
     document.getElementById("menu2").style.opacity="0.5";
     document.getElementById("menu3").style.opacity="1";
-    document.getElementById("menu4").style.opacity="0.5";
+    //document.getElementById("menu4").style.opacity="0.5";
     document.getElementById("readspan").style.display="block";
     document.getElementById("readmore").style.display="none";
   }
@@ -288,6 +299,11 @@ w3RemoveClass(element, name) {
     document.getElementById("readmore").style.display="none";
   }
 
+  readmore () {
+    document.getElementById("readmore").style.display="block";
+    document.getElementById("readspan").style.display="none";
+  }
+
   msh1() {
     document.getElementById("mp1").style.display="block";
     document.getElementById("mp2").style.display="none";
@@ -297,6 +313,7 @@ w3RemoveClass(element, name) {
     document.getElementById("agency").style.color="#f1b440";
     document.getElementById("tip").style.color="#f1b440";
   }
+
   msh2() {
     document.getElementById("mp1").style.display="none";
     document.getElementById("mp2").style.display="block";
@@ -413,9 +430,64 @@ w3RemoveClass(element, name) {
     document.getElementById("cap6").style.display="none";
   }
 
-  readmore () {
-    document.getElementById("readmore").style.display="block";
-    document.getElementById("readspan").style.display="none";
+  cap7() {
+    $("#cap7").toggle();
+    document.getElementById("cap1").style.display="none";
+    document.getElementById("cap2").style.display="none";
+    document.getElementById("cap3").style.display="none";
+    document.getElementById("cap4").style.display="none";
+    document.getElementById("cap5").style.display="none";
+    document.getElementById("cap6").style.display="none";
+    // document.getElementById("cap6").style.display="block";
+    document.getElementById("rw1").style.display="none";
+   // document.getElementById("rw2").style.display="none";
+  }
+  open7 () {
+    document.getElementById("rw1").style.display="flex";
+  //  document.getElementById("rw2").style.display="flex";
+    document.getElementById("cap7").style.display="none";
+  }
+
+  cap8() {
+    $("#cap8").toggle();
+    document.getElementById("cap1").style.display="none";
+    document.getElementById("cap2").style.display="none";
+    document.getElementById("cap3").style.display="none";
+    document.getElementById("cap4").style.display="none";
+    document.getElementById("cap5").style.display="none";
+    document.getElementById("cap6").style.display="none";
+    document.getElementById("cap7").style.display="none";
+    // document.getElementById("cap6").style.display="block";
+    document.getElementById("rw1").style.display="none";
+   // document.getElementById("rw2").style.display="none";
+  }
+  open8 () {
+    document.getElementById("rw1").style.display="flex";
+  //  document.getElementById("rw2").style.display="flex";
+    document.getElementById("cap8").style.display="none";
+  }
+  cap9() {
+    $("#cap9").toggle();
+    document.getElementById("cap1").style.display="none";
+    document.getElementById("cap2").style.display="none";
+    document.getElementById("cap3").style.display="none";
+    document.getElementById("cap4").style.display="none";
+    document.getElementById("cap5").style.display="none";
+    document.getElementById("cap6").style.display="none";
+    document.getElementById("cap7").style.display="none";
+    document.getElementById("cap8").style.display="none";
+    // document.getElementById("cap6").style.display="block";
+    document.getElementById("rw1").style.display="none";
+   // document.getElementById("rw2").style.display="none";
+  }
+  open9 () {
+    document.getElementById("rw1").style.display="flex";
+  //  document.getElementById("rw2").style.display="flex";
+    document.getElementById("cap9").style.display="none";
+  }
+  scroll () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
 }

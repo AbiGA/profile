@@ -1,4 +1,7 @@
-<div class="container-fluid" style="border-bottom: 1px solid black; position: relative;">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<div style="padding:0;">
+<div class="container-fluid" style=" width:100%; border-bottom: 1px solid black; position: relative;">
     <div id="m_logo"><img style="width: 33%;" src="https://tip.agency/images/tiplogo_web.png"></div>
     <div class="row top">
       <div class="col-sm-2 menu">
@@ -48,7 +51,7 @@
                   government officials, academics, NGOs, expert bodies, and most importantly, the community - to
                   facilitate a meaningful exchange of information and solutions that are actionable at the local
                   level that create exponential knock-on effect in the community.
-                  <span id="readspan" (click)="readmore();">Read More</span>
+                  <span id="readspan" style="cursor:pointer;" (click)="readmore();">Read More...</span>
               </p>
               <p id="readmore">
                   Our ongoing initiative, TIP Sessions: Coastal Edit focuses on issues that affect communities in
@@ -77,17 +80,17 @@
 </div>
 <div class="container-fluid" id="mobile_p">
   <div class="row">
-    <div class="col-sm-12">
-        <ul style="display: -webkit-inline-box">
-            <li style="font-size: 18px; margin: 5%;" id="intro" (click)="msh1();">INTRO</li>
-            <li style="font-size: 18px; margin: 5%; color: #f1b440;" id="agency" (click)="msh2();">AGENCY</li>
-            <li style="font-size: 18px; margin: 5%; color: #f1b440;" id="tip" (click)="msh3();">TIP SESSIONS</li>
+    <div class="col-sm-12" style="padding:0;">
+        <ul style="display: -webkit-inline-box; width: 100%;">
+            <li style="font-size: 16px; margin: 5%;" id="intro" (click)="msh1();">INTRO</li>
+            <li style="font-size: 16px; margin: 5%; color: #f1b440;" id="agency" (click)="msh2();">AGENCY</li>
+            <li style="font-size: 16px; margin: 5%; color: #f1b440;" id="tip" (click)="msh3();">TIP SESSIONS</li>
             <!-- <li style="font-size: 18px; margin: 5%; color: #f1b440;" id="projects" (click)="msh3();">Projects</li> -->
           </ul>
     </div>
   </div>
   <div class="row">
-      <div class="col" style="padding:10%; padding-top:0;padding-bottom:2%;">
+      <div class="col" style="padding:5%; padding-top:0;padding-bottom:2%;">
           <div id="mp1">
             <p>TIP is home to clean, contemporary design. We work with you to understand your business,
                 needs and goals, and deploy our design expertise to help your brand get to where it should 
@@ -174,15 +177,15 @@
           <img src="../../../assets/capabilities/Print and Packaging.png" style="width: 100%;">
           <h6>PRINT &<br/>PACKAGING</h6>
         </div>
-        <div class="col-6 col-sm-4">
+        <div (click)="cap7();" class="col-6 col-sm-4">
             <img src="../../../assets/capabilities/Gamification.png" style="width: 100%;">
             <h6>GAMIFICATION</h6>
         </div>
-        <div class="col-6 col-sm-4">
+        <div (click)="cap8();" class="col-6 col-sm-4">
             <img src="../../../assets/capabilities/Illustration.png" style="width: 100%;">
             <h6>ILLUSTRATION</h6>
         </div>
-        <div class="col-6 col-sm-4">
+        <div (click)="cap9();" class="col-6 col-sm-4">
             <img src="../../../assets/capabilities/Searchsocial.png" style="width: 100%;">
             <h6>SEARCH &<br/>SOCIAL MEDIA</h6>
         </div>
@@ -220,7 +223,7 @@
                 <span (click)="open2()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;padding-left: 5%;
+                <h6 style="color: #f1b440;padding-left: 10%; text-align: left;
                 padding-right: 10%;">“Strategy 101 is about choices: you can’t be all things
                                                    to all people.” - Michael Porter</h6>
                 <p style="text-align: justify; font-size: 14px;
@@ -246,8 +249,10 @@
                 <span (click)="open3()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;padding-left: 7%;
-                padding-right: 7%;">They say the internet never forgets. We’ll make sure
+                <h6 style="color: #f1b440; width: 80%;
+                text-align: left;
+                margin: 0 auto;
+                ">They say the internet never forgets. We’ll make sure
                                                   you’re remembered for all the right reasons. </h6>
                 <p style="text-align: justify; font-size: 14px;
                 width: 80%;
@@ -270,7 +275,7 @@
                 <span (click)="open4()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;padding-left: 10%;
+                <h6 style="color: #f1b440;padding-left: 10%; text-align: left;
                 padding-right: 10%;">A picture speaks a thousand words - especially when it moves!</h6>
                 <p style="text-align: justify;font-size: 14px;
                 width: 80%;
@@ -344,12 +349,79 @@
           </div>
         </div>
     </div>
+    <div id="cap7" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row popup_row6" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+                <img style="width: 100%;" src="../../../assets/capabilities/Gamification.png">
+                <h4 style="color: #f1b440; font-size: 18px;">Gamification</h4>
+                <span (click)="open7()" class="span_mob" style="position:absolute;top: 9%;right: 3%;cursor: pointer;">X</span>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+              <h6 style="color: #f1b440; padding-right: 10%; padding-left: 10%; text-align: left;">
+                  Even a single drop create ripples in a pond. But what happens when a lot of
+                  drops hit a pond’s surface? Imagine how much bigger that impact would be!
+              </h6>
+              <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+                  Here at TIP, we have set out on a mission to use technology to create an impact in society. We have dubbed this approach as ‘Impact Technology’. Catchy ain’t it?
+                  <br/>TIP has embarked on this journey to create awareness in our own quirky way.
+              </p>
+              <span class="span_desk" (click)="open7()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+          </div>
+          </div>
+        </div>
+    </div>
+    <div id="cap8" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row popup_row6" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+                <img style="width: 100%;" src="../../../assets/capabilities/Illustration.png">
+                <h4 style="color: #f1b440; font-size: 18px;">Illustration</h4>
+                <span (click)="open8()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+                <h6 style="color: #f1b440; text-align: left; padding-left: 10%">Just a doodle?</h6>
+              <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+                  Veering away from the limitations traditional media, sometimes it takes an
+                  indirect expression of creativity like this to seal the deal. Perfect for
+                  articulating the creative aspects of a brand through humour and fantasy,
+                  captivate your biggest cynics with this creative and amiable approach.
+              </p>
+              <span class="span_desk" (click)="open8()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+          </div>
+          </div>
+        </div>
+    </div>
+    <div id="cap9" class="row" style="padding: 2%; text-align: center; position: relative;">
+        <div class="col">
+          <div class="row popup_row6" style="width: 65%;
+          height: 350px; background-color: #5d3443; margin: 0 auto;">
+            <div class="col-sm-4 icon">
+                <img style="width: 100%;" src="../../../assets/capabilities/Searchsocial.png">
+                <h4 style="color: #f1b440; font-size: 18px;">Search &<br/>Social Media</h4>
+                <span (click)="open9()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
+            </div>
+            <div class="col-sm-8 popup" style="position: relative;">
+                <h6 style="color: #f1b440; text-align: left; padding-left: 10%">Get in. Get Online.</h6>
+              <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+                  With dwindling attention spans and constant bombardment from all corners, only the
+                  most riveting content will grab eyeballs. We thrive on meaty assignments that allow
+                  us to chart new territories using social media. Our handle on engaging content,
+                  coupled with nifty artwork will that ensure your brand surfs through.
+              </p>
+              <span class="span_desk" (click)="open9()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
+          </div>
+          </div>
+        </div>
+    </div>
   </div>
-<div class="container-fluid" style="padding-left: 0; padding-right: 0; position: relative;">
+<div class="container-fluid container-featured" style="padding-left: 0; padding-right: 0; position: relative;">
   <h3 style="padding-left: 15%;" class="featured_text">FEATURED</h3>
   <div class="featuredbox">
     <span style="font-weight: 600;">GOOD DESIGN IS OUR EXPERTISE.</span>
-    <p style="font-size: 12px;">Within the first 5 years of its existence, tip has worked with
+    <p style="font-size: 12px;">Within the first 5 years of its existence, TIP has worked with
       companies in real estate, fisheries , cosmetics, food & beverages, hospitality, executive
       coaching, tea & coffee estates, renewable energy, and many, many more. 
     </p>
@@ -361,27 +433,27 @@
     <div class="row" style="padding-top: 3%;">
         <div class="col">
             <marquee class="marquee1" behavior="scroll"  scrollamount="10" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Crafted-Trips-co_BIG.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/House-of-Satori_Big.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Lancome_BIG.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Kingfisher_Big.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Kandavara_Big.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Sarayu-Savya_Sachi_Big.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Nizanta.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Savya-Sachi_Big.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Thiashola_Big.png">  
+                <a href="https://tip.agency/crafted_trips.php" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Crafted-Trips-co_BIG.png"></a>
+                <a href="https://tip.agency/house_of_satori" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/House-of-Satori_Big.png"></a>
+                <a href="https://tip.agency/lancome" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Lancome_BIG.png"></a>
+                <a href="https://tip.agency/kingfisher" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Kingfisher_Big.png"></a>
+                <a href="https://tip.agency/kandavara" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Kandavara_Big.png"></a>
+                <a><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Sarayu-Savya_Sachi_Big.png"></a>
+                <a href="https://tip.agency/nizanta" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Nizanta_BIG.png"></a>
+                <a href="https://tip.agency/savyasachi" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Savya-Sachi_Big.png"></a>
+                <a href="https://tip.agency/thiashola" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Thiashola_Big.png"></a>
             </marquee>
             <marquee style="margin-top: -0.51%;" class="marquee2" behavior="scroll"  scrollamount="15" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Crafted-Trips-co_small.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Kingfisher_small.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/HouseofSatori.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Lancome_small.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Kandavara_small.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Nizanta_Small.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Sarayu_savyasachi_Small.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/SavyaSachi_small.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/SevenBeans_small.png">
-                <img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Thiashola-small.png">
+                <a href="https://tip.agency/crafted_trips.php" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Crafted-Trips-co_small.png"></a>
+                <a href="https://tip.agency/kingfisher" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Kingfisher_small.png"></a>
+                <a href="https://tip.agency/house_of_satori" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/HouseofSatori.png"></a>
+                <a href="https://tip.agency/lancome" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Lancome_small.png"></a>
+                <a href="https://tip.agency/kandavara" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Kandavara_small.png"></a>
+                <a href="https://tip.agency/nizanta" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Nizanta_Small.png"></a>
+                <a><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Sarayu_savyasachi_Small.png"></a>
+                <a href="https://tip.agency/savyasachi" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/SavyaSachi_small.png"></a>
+                <a href="https://tip.agency/sevenbeans" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/SevenBeans_small.png"></a>
+                <a href="https://tip.agency/thiashola" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Thiashola-small.png"></a>
               </marquee>
         </div>
       </div>
@@ -389,7 +461,7 @@
   <div class="container-fluid" style="padding-top: 5%;">
     <div class="row" style="text-align: center; font-variant-caps: all-petite-caps;">
       <div class="col">
-          <h3 style="text-align: initial;">Here are our select clients that can be chosen according to categories</h3>
+          <h3 style="text-align: left; padding-left: 7%;">Here are our select clients that can be chosen according to categories</h3>
       </div>
     </div>
     <div class="row categories" style="padding-top: 1%;">
@@ -426,46 +498,54 @@
              </select>
           </div>
         </div>
-      <ul id="myUL">
-          <li><img class="images strategy website" title="Thiashola" src="../../../assets/search/Thiashola.png"></li>
-          <li><img class="images branding content" title="Noetic step" src="../../../assets/search/noetic-step.png"></li>
+        <div class="row">
+          <div class="col">
+              <ul id="myUL">
+                  <li><a href="http://thiashola.in/" target="_blank"><img class="images strategy search illustration website" title="Thiashola" src="../../../assets/search/Thiashola.png"></a></li>
+                  <li><a href="http://noeticstep.com/" target="_blank"><img class="images branding website content" title="Noetic step" src="../../../assets/search/noetic-step.png"></a></li>
+                
+                  <li><a><img class="images illustration print" title="Ipseand" src="../../../assets/search/Ipseand.png"></a></li>
+                  <li><img class="images content" title="olive-energy" src="../../../assets/search/olive-energy.png"></li>
+                
+                  <li><a href="http://savyasachisarayu.com/" target="_blank"><img class="images website" title="savyasachi-sarayu" src="../../../assets/search/savyasachi-sarayu.png"></a></li>
+                  <li><img class="images branding" title="SelectHer step" src="../../../assets/search/selecther.png"></li>
         
-          <li><img class="images illustration print" title="Ipseand" src="../../../assets/search/Ipseand.png"></li>
-          <li> <img class="images content" title="olive-energy" src="../../../assets/search/olive-energy.png"></li>
+                  <li><a href="https://sevenbeans.co/" target="_blank"><img class="images website" title="seven-beans" src="../../../assets/search/seven-beans.png"></a></li>
+                  <li><img class="images branding print" title="huda-bar" src="../../../assets/search/huda-bar.png"></li>
         
-          <li><img class="images website" title="savyasachi-sarayu" src="../../../assets/search/savyasachi-sarayu.png"></li>
-          <li><img class="images branding" title="SelectHer step" src="../../../assets/search/selecther.png"></li>
-
-          <li><img class="images website" title="seven-beans" src="../../../assets/search/seven-beans.png"></li>
-
-          <li><img class="images content" title="Botama" src="../../../assets/search/botama.png"></li>
-          <li><img class="images gamification" title="Election Commision" src="../../../assets/search/Election-Commission-of-India.png"></li>
-
-          <li><img class="images content" title="Crafted Holidays" src="../../../assets/search/Crafted-Holidays.png"></li>
-          <li><img class="images content website strategy" title="Karnataka Gov" src="../../../assets/search/goverment-of-karnataka.png"></li>
-
-          <li><img class="images print" title="Jantha Group" src="../../../assets/search/Janatha-Group.png"></li>
-          <li><img class="images print" title="Jus Amazin" src="../../../assets/search/jus-amazin.png"></li>
-
-          <li><img class="images strategy search illustration" title="Lake View" src="../../../assets/search/lakeview.png"></li>
-          <li><img class="images search" title="kandavara" src="../../../assets/search/Kandavara.png"></li>
-
-          <li><img class="images strategy search" title="Kingfisher" src="../../../assets/search/kingfisher.png"></li>
-          <li><img class="images software" title="Lancome" src="../../../assets/search/Lancome.png"></li>
-
-          <li><img class="images search" title="Leeco" src="../../../assets/search/leeco.png"></li>
-          <li><img class="images illustration" title="Mallet" src="../../../assets/search/Mallet.png"></li>
-
-          <li><img class="images gamification" title="Madhuram" src="../../../assets/search/madhuram.png"></li>
-
-          <li><img class="images gamification" title="Mission-Happiness" src="../../../assets/search/Mission-Happiness.png"></li>
-          <li><img class="images print branding" title="Savyasachi" src="../../../assets/search/savyasachi.png"></li>
-
-          <li><img class="images strategy illustration" title="Udupi Tourism" src="../../../assets/search/Udupi-tourism.png"></li>
-
-        </ul>
+                  <li><img class="images content" title="Botama" src="../../../assets/search/botama.png"></li>
+                  <li><img class="images gamification" title="Election Commision" src="../../../assets/search/Election-Commission-of-India.png"></li>
+        
+                  <li><img class="images content" title="Crafted Holidays" src="../../../assets/search/Crafted-Holidays.png"></li>
+                  <li><a href="http://kswdc.in/" target="_blank"><img class="images content website strategy" title="Karnataka Gov" src="../../../assets/search/goverment-of-karnataka.png"></a></li>
+        
+                  <li><img class="images print" title="Jantha Group" src="../../../assets/search/Janatha-Group.png"></li>
+                  <li><img class="images print" title="Jus Amazin" src="../../../assets/search/jus-amazin.png"></li>
+        
+                  <li><img class="images strategy search illustration" title="Lake View" src="../../../assets/search/lakeview.png"></li>
+                  <li><a href="http://heritagehomeindia.in/" target="_blank"><img class="images branding search" title="kandavara" src="../../../assets/search/Kandavara.png"></a></li>
+        
+                  <li><img class="images strategy search" title="Kingfisher" src="../../../assets/search/kingfisher.png"></li>
+                  <li><img class="images software" title="Lancome" src="../../../assets/search/Lancome.png"></li>
+        
+                  <li><img class="images search" title="Leeco" src="../../../assets/search/leeco.png"></li>
+                  <li><img class="images illustration" title="Mallet" src="../../../assets/search/Mallet.png"></li>
+        
+                  <li><img class="images gamification" title="Madhuram" src="../../../assets/search/madhuram.png"></li>
+        
+                  <li><img class="images gamification" title="Mission-Happiness" src="../../../assets/search/Mission-Happiness.png"></li>
+                  <li><a href="http://savyasachigroup.com/" target="_blank"><img class="images print branding" title="Savyasachi" src="../../../assets/search/savyasachi.png"></a></li>
+        
+                  <li><img class="images strategy illustration" title="Udupi Tourism" src="../../../assets/search/Udupi-tourism.png"></li>
+        
+                </ul>
+          </div>
+        </div>
   </div>
-
+  <i id="arrow" (click)="scroll()" style="display: none; position: fixed; bottom: 0; right: 0; cursor: pointer;" class="material-icons">
+    arrow_upward
+  </i>
+</div>
   <!-- <div class="container-fluid" style="padding: 0;">
       <div class="row" style="padding: 1%;">
           <div class="col">
