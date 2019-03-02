@@ -187,11 +187,11 @@ p {
 h3,h6 {
   font-family: 'Montserrat', sans-serif;
 }
-.marquee1 img {
+.marquee1 a img {
   min-height: 385px;
   width: auto !important;
 }
-.marquee2 img {
+.marquee2 a img {
   max-height: 238px;
   width: auto !important;
 }
@@ -235,6 +235,11 @@ option {
 h3 {
   font-size: 20px !important;
 }
+@media(max-width: 1024px) {
+  .featuredbox {
+    top: 10%;
+  }
+}
   @media (max-width: 768px) {
     #p1,#p2,#p3 {
       width: 100% !important;
@@ -255,6 +260,24 @@ h3 {
   #rw1[_ngcontent-c1] img[_ngcontent-c1], #rw2[_ngcontent-c1] img[_ngcontent-c1] {
     width: 80% !important;
 }
+.featuredbox {
+  position: initial;
+  background: none;
+  right: 14%;
+  top: 22%;
+  padding: 2%;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+.featuredbox h3 {
+  padding-left: 0;
+  text-align: center;
+}
+.featuredbox p {
+  text-align: left;
+}
+
   }
 
   @media (max-width: 678px) {
@@ -314,7 +337,7 @@ li {
 }
 
 
-a:link, a:visited {
+/* a:link, a:visited {
     display: block;
     width: 80px;
     font-weight: bold;
@@ -327,7 +350,7 @@ a:link, a:visited {
 
 a:hover, a:active {
     background-color: #7A991A;
-}
+} */
 
     #intro {
       color: white;
@@ -375,7 +398,7 @@ a:hover, a:active {
     padding-top: 6%
   }
   #p1,#p2,#p3 {
-    display: none;
+    display: none !important;
   }
   #mp2,#mp3 {
     display: none;

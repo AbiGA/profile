@@ -46,7 +46,7 @@ function scrollFunction() {
         }
 
 
-          var x = window.matchMedia("(max-width: 700px)")
+          var x = window.matchMedia("(max-width: 678px)")
           detect(x) // Call listener function at run time
           x.addListener(detect) // Attach listener function on state changes
         var current = 0;
