@@ -240,6 +240,7 @@ h3 {
     top: 10%;
   }
 }
+
   @media (max-width: 768px) {
     #p1,#p2,#p3 {
       width: 100% !important;
