@@ -1,5 +1,15 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div style="background:white; position: relative;">
+        <owl-carousel [options]="mySlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+          <div class="item" *ngFor="let image of images;let i = index">
+           <div>
+             <img style="width: 100%;" src={{image.url}}/>
+           </div>
+          </div>
+         </owl-carousel>
+      </div> -->
 <div style="padding:0;">
 <div class="container-fluid" style=" width:100%; border-bottom: 1px solid black; position: relative;">
     <div id="m_logo"><img style="width: 33%;" src="https://tip.agency/images/tiplogo_web.png"></div>
@@ -7,9 +17,9 @@
       <div class="col-sm-2 menu">
         <img style="width: 65%;" src="https://tip.agency/images/tiplogo_web.png">
         <ul style="text-align:right; padding-top: 38%;">
-          <li style="font-size: 20px; margin: 5%; color: #f1b440; cursor:pointer;" id="menu1" (click)="sh1();">INTRO</li>
-          <li style="font-size: 20px; margin: 5%; color: #f1b440; cursor:pointer;" id="menu2" (click)="sh2();">AGENCY</li>
-          <li style="font-size: 20px; margin: 5%; color: #f1b440; cursor:pointer;" id="menu3" (click)="sh3();">TIP SESSIONS</li>
+          <li style="font-size: 20px; margin: 5%;  cursor:pointer;" id="menu1" (click)="sh1();">INTRO</li>
+          <li style="font-size: 20px; margin: 5%;  cursor:pointer;" id="menu2" (click)="sh2();">AGENCY</li>
+          <li style="font-size: 20px; margin: 5%;  cursor:pointer;" id="menu3" (click)="sh3();">TIP SESSIONS</li>
           <!-- <li style="font-size: 20px; margin: 5%; color: #f1b440;" id="menu4" (click)="sh4();">PROJECTS</li> -->
         </ul>
       </div>
@@ -71,6 +81,11 @@
                   keen practical awareness of the digital landscape
               </p>
           </div>
+          <ul id="deskul" style="color: white; display: inline-block; font-size: 35px; position: absolute; top: 37%; padding-left: 1%;">
+              <li id="01"><strong>01</strong></li>
+              <li class="litwo" id="02"><strong>02</strong></li>
+              <li class="lithree" id="03"><strong>03</strong></li>
+          </ul>
           <!-- <div style="position: absolute; bottom: 0; right: 0; width: 250px;"><p>&quot;Bold intuitive design backed by a solid foundation of research&quot;</p></div> -->
         </div>
     </div>
@@ -153,7 +168,7 @@
         </p></div>
     </div>
     <div id="rw1" class="row">
-        <div (click)="cap1();" class="col-6 col-sm-4">
+        <div (click)="setTimeout(cap1(), 3000);" class="col-6 col-sm-4">
           <img src="../../../assets/capabilities/Branding.png" style="width: 100%;">
           <h6>BRANDING</h6>
         </div>
@@ -200,8 +215,8 @@
               <span (click)="open1()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440; margin-left: -20%;">WHAT'S IN A NAME? EVERYTHING</h6>
-                <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+                <h6 style="color: #f1b440; margin-left: -16%; font-size: 18px;">WHAT'S IN A NAME? EVERYTHING</h6>
+                <p style="text-align: justify; font-size: 14px; width: 80%; padding-top: 3%; margin: 0 auto;">
                   We’ll help you stand out in the crowd by creating a memorable brand identity – down
                   to the look, feel and emotions you evoke in your customers and importantly, where
                   you want your brand to go. Our specialists will work with you to create a holistic
@@ -223,11 +238,11 @@
                 <span (click)="open2()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;padding-left: 10%; text-align: left;
+                <h6 style="color: #f1b440;padding-left: 10%; text-align: left; font-size: 18px;
                 padding-right: 10%;">“Strategy 101 is about choices: you can’t be all things
                                                    to all people.” - Michael Porter</h6>
                 <p style="text-align: justify; font-size: 14px;
-                width: 80%;
+                width: 80%; padding-top: 3%;
                 margin: 0 auto;">With brand strategy, we ask the tough questions, and help you find the right answers.
                    Based on in-depth research into sectors and market trends, we’ll help you cut through
                    the clutter to craft a strong, coherent strategy that tells your unique story. We
@@ -250,12 +265,12 @@
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
                 <h6 style="color: #f1b440; width: 80%;
-                text-align: left;
+                text-align: left; font-size: 18px;
                 margin: 0 auto;
-                ">They say the internet never forgets. We’ll make sure
-                                                  you’re remembered for all the right reasons. </h6>
+                ">They say the internet never forgets.<br/>We’ll make sure
+                                                  you’re remembered<br/>for all the right reasons. </h6>
                 <p style="text-align: justify; font-size: 14px;
-                width: 80%;
+                width: 80%; padding-top: 3%;
                 margin: 0 auto;">With catchy content, nifty web and mobile apps, and search engine optimization to grab
                    the right set of eyeballs for your business, we’ll help mold your online presence to make
                    it fun, user-friendly, intuitive and above all, functional.
@@ -275,10 +290,10 @@
                 <span (click)="open4()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440;padding-left: 10%; text-align: left;
+                <h6 style="color: #f1b440;padding-left: 10%; font-size: 18px; text-align: left;
                 padding-right: 10%;">A picture speaks a thousand words - especially when it moves!</h6>
                 <p style="text-align: justify;font-size: 14px;
-                width: 80%;
+                width: 80%; padding-top: 3%;
                 margin: 0 auto;">We create illustrations, ad films and animations that inject life into your brand, and leverage
                    the power of visuals to create the right kind of impact for your company.
                 </p>
@@ -297,8 +312,8 @@
             <span (click)="open5()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
           </div>
           <div class="col-sm-8 popup" style="position: relative;">
-            <h6 style="color: #f1b440; padding-right: 12%;">It’s not what you say, but how you say it.</h6>
-            <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+            <h6 style="color: #f1b440; padding-right: 3%; font-size: 18px;">It’s not what you say, but how you say it.</h6>
+            <p style="text-align: justify; font-size: 14px; padding-top: 3%; width: 80%; margin: 0 auto;">
               We help you harness the power of the written word to make sure your messaging is on
                point and to the point.
             </p>
@@ -338,8 +353,8 @@
                 <span (click)="open6()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-              <h6 style="color: #f1b440; padding-right: 10%; padding-left: 4%;">Never judge a book by its cover? Yeah, right!</h6>
-              <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+              <h6 style="color: #f1b440; font-size: 18px; padding-left: 4%;">Never judge a book by its cover? Yeah, right!</h6>
+              <p style="text-align: justify; font-size: 14px; width: 80%; padding-top: 3%; margin: 0 auto;">
                    We know the importance of a great first impression and create eye-catching packaging
                    and brand collaterals with a refined, modern aesthetic that reflects product excellence,
                    both on the inside and the outside!
@@ -359,11 +374,11 @@
                 <span (click)="open7()" class="span_mob" style="position:absolute;top: 9%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-              <h6 style="color: #f1b440; padding-right: 10%; padding-left: 10%; text-align: left;">
-                  Even a single drop create ripples in a pond. But what happens when a lot of
-                  drops hit a pond’s surface? Imagine how much bigger that impact would be!
+              <h6 style="color: #f1b440; padding-right: 10%; font-size: 18px; padding-left: 10%; text-align: left;">
+                  Even a single drop create ripples in a pond, but what happens when a lot of
+                  drops hit a pond’s surface?
               </h6>
-              <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+              <p style="text-align: justify; font-size: 14px; padding-top: 3%; width: 80%; margin: 0 auto;">
                   Here at TIP, we have set out on a mission to use technology to create an impact in society. We have dubbed this approach as ‘Impact Technology’. Catchy ain’t it?
                   <br/>TIP has embarked on this journey to create awareness in our own quirky way.
               </p>
@@ -382,8 +397,8 @@
                 <span (click)="open8()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440; text-align: left; padding-left: 10%">Just a doodle?</h6>
-              <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
+                <h6 style="color: #f1b440; text-align: left; font-size: 18px; padding-left: 10%">Just a doodle?</h6>
+              <p style="text-align: justify; font-size: 14px; width: 80%; padding-top: 3%; margin: 0 auto;">
                   Veering away from the limitations traditional media, sometimes it takes an
                   indirect expression of creativity like this to seal the deal. Perfect for
                   articulating the creative aspects of a brand through humour and fantasy,
@@ -400,25 +415,26 @@
           height: 350px; background-color: #5d3443; margin: 0 auto;">
             <div class="col-sm-4 icon">
                 <img style="width: 100%;" src="../../../assets/capabilities/Searchsocial.png">
-                <h4 style="color: #f1b440; font-size: 18px;">Search &<br/>Social Media</h4>
+                <h4 style="color: #f1b440; font-size: 18px;">Search & Social Medida</h4>
                 <span (click)="open9()" class="span_mob" style="position:absolute;top: 4%;right: 3%;cursor: pointer;">X</span>
             </div>
             <div class="col-sm-8 popup" style="position: relative;">
-                <h6 style="color: #f1b440; text-align: left; padding-left: 10%">Get in. Get Online.</h6>
-              <p style="text-align: justify; font-size: 14px; width: 80%; margin: 0 auto;">
-                  With dwindling attention spans and constant bombardment from all corners, only the
-                  most riveting content will grab eyeballs. We thrive on meaty assignments that allow
-                  us to chart new territories using social media. Our handle on engaging content,
-                  coupled with nifty artwork will that ensure your brand surfs through.
+                <h6 style="color: #f1b440; text-align: left; font-size: 18px; padding-left: 10%">Get in. Get Online</h6>
+              <p style="text-align: justify; font-size: 14px; width: 80%; padding-top: 3%; margin: 0 auto;">
+                  With dwindling attention spans and constant bombardment from all corners, only the most
+                  riveting content will grab eyeballs. We thrive on meaty assignments that allow us to
+                  chart new territories using social media. Our handle on engaging content, coupled with
+                  nifty artwork will that ensure your brand surfs through. 
               </p>
               <span class="span_desk" (click)="open9()" style="position:absolute;top:4%;right: 3%;cursor: pointer;">X</span>
           </div>
           </div>
         </div>
     </div>
+
   </div>
 <div class="container-fluid container-featured" style="padding-left: 0; padding-right: 0; position: relative;">
-  <h3 style="padding-left: 15%;" class="featured_text">FEATURED</h3>
+  <h3 style="padding-left: 19%;" class="featured_text">FEATURED</h3>
   <div class="featuredbox">
     <h3 style="text-align: left;">GOOD DESIGN IS OUR EXPERTISE.</h3>
     <p style="font-size: 12px;">Within the first 5 years of its existence, TIP has worked with
@@ -430,9 +446,29 @@
         sectors that we have designed for.
     </p>
   </div>
-    <div class="row" style="padding-top: 3%;">
-        <div class="col">
-            <marquee class="marquee1" behavior="scroll"  scrollamount="10" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+  <div class="row" style="padding-bottom: 0; padding-top: 2%;">
+      <div class="col-12 col-sm-7" style="padding: 0; height: 350px;">
+          <iframe style="width: 100%;"  height="350" src="https://www.youtube.com/embed/GS6N0eA4PWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-12 col-sm-5" id="box" style="padding: 0; height: 350px;">
+          <div class="box" height="315">
+              <h3 style="text-align: left;">GOOD DESIGN<br/>IS OUR EXPERTISE.</h3>
+              <p style="font-size: 12px; width: 80%;
+              text-align: justify;">Within the first 5 years of its existence, TIP has worked with
+                companies in real estate, fisheries , cosmetics, food & beverages, hospitality, executive
+                coaching, tea & coffee estates, renewable energy, and many, many more. 
+              </p>
+              <p style="font-size: 12px; width: 80%;
+              text-align: justify;">
+                  We apply our methodology to your brand and industry, which reflects in the range of
+                  sectors that we have designed for.
+              </p>
+            </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col marquee_col">
+            <!-- <marquee class="marquee1" behavior="scroll"  scrollamount="10" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
                 <a href="https://tip.agency/crafted_trips.php" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Crafted-Trips-co_BIG.png"></a>
                 <a href="https://tip.agency/house_of_satori" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/House-of-Satori_Big.png"></a>
                 <a href="https://tip.agency/lancome" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Lancome_BIG.png"></a>
@@ -441,9 +477,10 @@
                 <a><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Sarayu-Savya_Sachi_Big.png"></a>
                 <a href="https://tip.agency/nizanta" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Nizanta_BIG.png"></a>
                 <a href="https://tip.agency/savyasachi" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Savya-Sachi_Big.png"></a>
+                <a href="https://tip.agency/sevenbeans" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Seven-Beans-Big.png"></a>
                 <a href="https://tip.agency/thiashola" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_1/Thiashola_Big.png"></a>
-            </marquee>
-            <marquee style="margin-top: -0.51%;" class="marquee2" behavior="scroll"  scrollamount="15" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+            </marquee> -->
+            <marquee class="marquee2" behavior="scroll"  scrollamount="15" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
                 <a href="https://tip.agency/crafted_trips.php" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Crafted-Trips-co_small.png"></a>
                 <a href="https://tip.agency/kingfisher" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/Kingfisher_small.png"></a>
                 <a href="https://tip.agency/house_of_satori" target="_blank"><img style="width: 40%;" src="../../../assets/portfolio/portfolio_2/HouseofSatori.png"></a>
@@ -459,15 +496,15 @@
       </div>
 </div>
   <div class="container-fluid" style="padding-top: 5%;">
-    <div class="row" style="text-align: center; font-variant-caps: all-petite-caps;">
+    <div class="row categories" style="text-align: center; font-variant-caps: all-petite-caps;">
       <div class="col">
-          <h3 style="text-align: left; padding-left: 7%;">Here are our select clients that can be chosen according to categories</h3>
+          <h3 class="select_client" style="text-align: left; padding-left: 7%;">SELECT CLIENTS</h3>
       </div>
     </div>
     <div class="row categories" style="padding-top: 1%;">
         <div class="col" style="text-align: center; font-size: 12px;padding-left: 2%;padding-right: 2%;">
             <ul id="myUL1">
-              <li style="border-right: none;">SERVICES : </li>
+              <li style="border-right: none;">CATEGORIES : </li>
               <li (click)="search('images')">ALL</li>
               <li (click)="search('branding')">BRANDING</li>
               <li (click)="search('strategy')">STRATEGY</li>
@@ -484,26 +521,50 @@
       </div>
       <div class="row category_dropdown" style="padding-top: 1%;">
           <div class="col" style="text-align: center; font-size: 12px;padding-left: 2%;padding-right: 2%;">
-             <select (change)="search1($event);" id="sel">
-               <option selected value="images">ALL</option>
-               <option value="branding">BRANDING</option>
-               <option value="strategy">STRATEGY</option>
-               <option value="website">WEBSITE DEVELOPMENT</option>
-               <option value="illustration">ILLUSTRATION</option>
-               <option value="gamification">GAMIFICATION</option>
-               <option value="print">PRINT & PACKAGING</option>
-               <option value="content">CONTENT</option>
-               <option value="search">SEARCH & SOCIAL MEDIA</option>
-               <option value="software">SOFTWARE DEVELOPMENT</option>
-             </select>
+            <div class="row">
+              <div class="col-12">
+                <h3>SELECT CLIENTS</h3>
+              </div>
+            </div>
+             <div class="row">
+               <div class="col-4" style="padding-right: 0;">
+                 <h4 style="font-size: 16px;">Categories : </h4>
+               </div>
+               <div class="col-8" style="padding-left: 0;">
+                  <select style="width: 100%;" (change)="search1($event);" id="sel">
+                      <option selected value="images">ALL</option>
+                      <option value="branding">BRANDING</option>
+                      <option value="strategy">STRATEGY</option>
+                      <option value="website">WEBSITE DEVELOPMENT</option>
+                      <option value="illustration">ILLUSTRATION</option>
+                      <option value="gamification">GAMIFICATION</option>
+                      <option value="print">PRINT & PACKAGING</option>
+                      <option value="content">CONTENT</option>
+                      <option value="search">SEARCH & SOCIAL MEDIA</option>
+                      <option value="software">SOFTWARE DEVELOPMENT</option>
+                    </select>
+               </div>
+             </div>
           </div>
         </div>
         <div class="row">
           <div class="col">
               <ul id="myUL">
+                  <li><a href="http://kswdc.in/" target="_blank"><img class="images content website strategy" title="Karnataka Gov" src="../../../assets/search/goverment-of-karnataka.png"></a></li>
+                  <li><img class="images gamification" title="Election Commision" src="../../../assets/search/Election-Commission-of-India.png"></li>
+
+                  <li><img class="images strategy illustration" title="Udupi Tourism" src="../../../assets/search/Udupi-tourism.png"></li>
+                  <li><img class="images strategy search" title="Kingfisher" src="../../../assets/search/kingfisher.png"></li>
+
+                  <li><img class="images software" title="Lancome" src="../../../assets/search/Lancome.png"></li>
+                  <li><img class="images search" title="Leeco" src="../../../assets/search/leeco.png"></li>
+
                   <li><a href="http://thiashola.in/" target="_blank"><img class="images strategy search illustration website" title="Thiashola" src="../../../assets/search/Thiashola.png"></a></li>
                   <li><a href="http://noeticstep.com/" target="_blank"><img class="images branding website content" title="Noetic step" src="../../../assets/search/noetic-step.png"></a></li>
-                
+
+                  <li><img class="images gamification" title="Madhuram" src="../../../assets/search/madhuram.png"></li>
+                  <li><img class="images gamification" title="Mission-Happiness" src="../../../assets/search/Mission-Happiness.png"></li>
+
                   <li><a><img class="images illustration print" title="Ipseand" src="../../../assets/search/Ipseand.png"></a></li>
                   <li><img class="images content" title="olive-energy" src="../../../assets/search/olive-energy.png"></li>
                 
@@ -514,10 +575,10 @@
                   <li><img class="images branding print" title="huda-bar" src="../../../assets/search/huda-bar.png"></li>
         
                   <li><img class="images content" title="Botama" src="../../../assets/search/botama.png"></li>
-                  <li><img class="images gamification" title="Election Commision" src="../../../assets/search/Election-Commission-of-India.png"></li>
+
         
                   <li><img class="images content" title="Crafted Holidays" src="../../../assets/search/Crafted-Holidays.png"></li>
-                  <li><a href="http://kswdc.in/" target="_blank"><img class="images content website strategy" title="Karnataka Gov" src="../../../assets/search/goverment-of-karnataka.png"></a></li>
+                 
         
                   <li><img class="images print" title="Jantha Group" src="../../../assets/search/Janatha-Group.png"></li>
                   <li><img class="images print" title="Jus Amazin" src="../../../assets/search/jus-amazin.png"></li>
@@ -525,24 +586,19 @@
                   <li><img class="images strategy search illustration" title="Lake View" src="../../../assets/search/lakeview.png"></li>
                   <li><a href="http://heritagehomeindia.in/" target="_blank"><img class="images branding search" title="kandavara" src="../../../assets/search/Kandavara.png"></a></li>
         
-                  <li><img class="images strategy search" title="Kingfisher" src="../../../assets/search/kingfisher.png"></li>
-                  <li><img class="images software" title="Lancome" src="../../../assets/search/Lancome.png"></li>
-        
-                  <li><img class="images search" title="Leeco" src="../../../assets/search/leeco.png"></li>
+
                   <li><img class="images illustration" title="Mallet" src="../../../assets/search/Mallet.png"></li>
         
-                  <li><img class="images gamification" title="Madhuram" src="../../../assets/search/madhuram.png"></li>
-        
-                  <li><img class="images gamification" title="Mission-Happiness" src="../../../assets/search/Mission-Happiness.png"></li>
+                 
                   <li><a href="http://savyasachigroup.com/" target="_blank"><img class="images print branding" title="Savyasachi" src="../../../assets/search/savyasachi.png"></a></li>
         
-                  <li><img class="images strategy illustration" title="Udupi Tourism" src="../../../assets/search/Udupi-tourism.png"></li>
+
         
                 </ul>
           </div>
         </div>
   </div>
-  <i id="arrow" (click)="scroll()" style="display: none; position: fixed; bottom: 0; right: 0; cursor: pointer;" class="material-icons">
+  <i id="arrow" (click)="scroll()" style="display: none; position: fixed; bottom: 4%; right: 2%; cursor: pointer;" class="material-icons">
     arrow_upward
   </i>
 </div>

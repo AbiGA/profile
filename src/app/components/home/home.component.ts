@@ -11,11 +11,42 @@ export class HomeComponent implements OnInit {
   constructor() {
    // this.filterSelection("all");
   }
-  background_images = [
-    "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
-    "https://www.petfinder.com/wp-content/uploads/2013/09/cat-black-superstitious-fcs-cat-myths-162286659.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_March_2010-1.jpg"
-  ]
+//   mySlideImages = [1,2,3].map((i)=> 'https://picsum.photos/640/480?image=${i}');
+// myCarouselImages =[1,2,3,4,5,6].map((i)=>'https://picsum.photos/640/480?image=${i}');
+// mySlideOptions={
+//   items: 3, 
+//   dots: false,
+//   nav: true,
+//   navText: ["<i style='position: absolute;top: 45%;left: 2%;' class='fa fa-long-arrow-left'></i>","<i style='position: absolute;top: 45%;right: 2%;' class='fa fa-long-arrow-right'></i>"],
+//   loop: true
+// };
+// myCarouselOptions={items: 3, dots: true, nav: true};
+
+
+// images= [
+//   {
+//     url:  "../../../assets/Hero-Image.png",
+//     caption: "Jolven",
+//     detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
+//   },
+//   {
+//     url: "../../../assets/Crack.png",
+//     caption: "Jolven",
+//     detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
+//   },
+//   {
+//     url:  "../../../assets/Hero-Image.png",
+//     caption: "Jolven",
+//     detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
+//   },
+//   {
+//     url:  "../../../assets/Hero-Image.png",
+//     caption: "Jolven",
+//     detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
+//   }
+// ]
+
+
   ngOnInit() {
     $(document).ready(function(){
       $(function() {
@@ -28,8 +59,7 @@ function scrollFunction() {
     document.getElementById("arrow").style.display = "none";
   }
 }
-
-        var body = $('.menu-text');
+       var body = $('.menu-text');
         var backgrounds;
         function detect(x) {
           if (x.matches) { // If media query matches
@@ -246,10 +276,16 @@ w3RemoveClass(element, name) {
   }
 
   sh1() {
-    document.getElementById("p1").style.display="block";
+    document.getElementById("p1").style.display="inline-block";
     document.getElementById("p2").style.display="none";
     document.getElementById("p3").style.display="none";
   //  document.getElementById("p4").style.display="none";
+    document.getElementById("01").style.color="white";
+    document.getElementById("01").style.opacity="1";
+    document.getElementById("02").style.color="white";
+    document.getElementById("02").style.opacity="0.5";
+    document.getElementById("03").style.color="white";
+    document.getElementById("03").style.opacity="0.5";
 
     document.getElementById("menu1").style.opacity="1";
     document.getElementById("menu2").style.opacity="0.5";
@@ -261,9 +297,15 @@ w3RemoveClass(element, name) {
   }
   sh2() {
     document.getElementById("p1").style.display="none";
-    document.getElementById("p2").style.display="block";
+    document.getElementById("p2").style.display="inline-block";
     document.getElementById("p3").style.display="none";
   //  document.getElementById("p4").style.display="none";
+    document.getElementById("01").style.color="white";
+    document.getElementById("01").style.opacity="0.5";
+    document.getElementById("02").style.color="white";
+    document.getElementById("02").style.opacity="1";
+    document.getElementById("03").style.color="white";
+    document.getElementById("03").style.opacity="0.5";
 
     document.getElementById("menu1").style.opacity="0.5";
     document.getElementById("menu2").style.opacity="1";
@@ -275,8 +317,14 @@ w3RemoveClass(element, name) {
   sh3() {
     document.getElementById("p1").style.display="none";
     document.getElementById("p2").style.display="none";
-    document.getElementById("p3").style.display="block";
+    document.getElementById("p3").style.display="inline-block";
    // document.getElementById("p4").style.display="none";
+    document.getElementById("01").style.color="white";
+    document.getElementById("01").style.opacity="0.5";
+    document.getElementById("02").style.color="white";
+    document.getElementById("02").style.opacity="0.5";
+    document.getElementById("03").style.color="white";
+    document.getElementById("03").style.opacity="1";
 
     document.getElementById("menu1").style.opacity="0.5";
     document.getElementById("menu2").style.opacity="0.5";

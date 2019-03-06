@@ -17,25 +17,30 @@ ul {
     list-style: none;
     padding-left: 0;
 }
+p {
+  color: white !important;
+}
 #p1 {
-    display: block;
+    display: inline-block;
     width: 50%;
     text-align: justify;
-    background: black;
+    background: #021f2e;
     padding: 1%;
 }
 #p2, #p3, #p4 {
     display: none;
     width: 50%;
     text-align: justify;
-    background: black;
+    background: #021f2e;
     padding: 1%;
 }
 #menu1 {
   opacity: 1;
+  color: white;
 }
 #menu2,#menu3,#menu4 {
   opacity: 0.5;
+  color: white;
 }
 /* #p3 {
     max-height: 44vh;
@@ -61,6 +66,9 @@ ul {
 }
 #cap1, #cap2, #cap3, #cap4, #cap5, #cap6, #cap7, #cap8, #cap9 {
     display: none;
+}
+.litwo, .lithree {
+  opacity: 0.5;
 }
 .col-xs-12.col-sm-4.w3-padding-32.w3-red.w3-circle.w3-center {
   cursor: pointer;
@@ -93,6 +101,7 @@ ul {
 .show {
   display: list-item;
 }
+
 #myUL1 li {
     margin: 5px;
     padding-right: 1%;
@@ -102,6 +111,14 @@ ul {
   #myUL li, #myUL1 li {
     display: inline-block;
   }
+  #myUL1 li {
+    color: white !important;
+  }
+
+#rw1 {
+  padding-left: 7%;
+  padding-right: 7%;
+}
 
   /* #myUL li a {
     border: 1px solid #ddd;
@@ -211,7 +228,7 @@ h3,h6 {
 }
 .featuredbox {
     position: absolute;
-    background: blueviolet;
+    background: #3C5B7C;
     right: 14%;
     top: 22%;
     padding: 2%;
@@ -235,6 +252,16 @@ option {
 h3 {
   font-size: 20px !important;
 }
+.featuredbox {
+  display: none;
+}
+#box {
+  display: block;
+}
+.box {
+  padding-top: 10%;
+  width: 100%; padding-left: 3%; height: 100%; background-color: #3C5B7C
+}
 @media(max-width: 1024px) {
   .featuredbox {
     top: 10%;
@@ -244,6 +271,12 @@ h3 {
   @media (max-width: 768px) {
     #p1,#p2,#p3 {
       width: 100% !important;
+    }
+    #deskul {
+      display: none !important;
+    }
+    .marquee_col {
+      padding: 0;
     }
     /* .menu-text {
       padding-top: 36%;
@@ -280,10 +313,23 @@ h3 {
 }
 
   }
-
+  
   @media (max-width: 678px) {
     .menu img {
       width: 30%;
+    }
+    .featuredbox {
+      display: block;
+    }
+    #box,.box {
+      display: none;
+    }
+    .select_client {
+      padding-left: 0 !important;
+      text-align: center !important;
+    }
+    #deskul {
+      display: none !important;
     }
     .span_desk {
       display: none;
