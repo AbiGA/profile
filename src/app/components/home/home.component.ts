@@ -383,6 +383,9 @@ w3RemoveClass(element, name) {
 
   cap1() {
     $("#cap1").toggle();
+    document.getElementById('rw1').scrollIntoView({
+    behavior: 'smooth'
+  });
 //    document.getElementById("cap1").style.display="block";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -399,6 +402,9 @@ w3RemoveClass(element, name) {
   }
   cap2() {
     $("#cap2").toggle();
+    document.getElementById('rw1').scrollIntoView({
+      behavior: 'smooth'
+    });
     document.getElementById("cap1").style.display="none";
     // document.getElementById("cap2").style.display="block";
     document.getElementById("cap3").style.display="none";
@@ -415,6 +421,9 @@ w3RemoveClass(element, name) {
   }
   cap3() {
     $("#cap3").toggle();
+    document.getElementById('rw1').scrollIntoView({
+      behavior: 'smooth'
+    });
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     // document.getElementById("cap3").style.display="block";
@@ -431,6 +440,7 @@ w3RemoveClass(element, name) {
   }
   cap4() {
     $("#cap4").toggle();
+    document.getElementById('rw1').scrollIntoView();
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -447,6 +457,7 @@ w3RemoveClass(element, name) {
   }
   cap5() {
     $("#cap5").toggle();
+    document.getElementById('rw1').scrollIntoView();
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -463,6 +474,7 @@ w3RemoveClass(element, name) {
   }
   cap6() {
     $("#cap6").toggle();
+    document.getElementById('rw1').scrollIntoView();
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -480,6 +492,7 @@ w3RemoveClass(element, name) {
 
   cap7() {
     $("#cap7").toggle();
+    document.getElementById('rw1').scrollIntoView();
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -498,6 +511,7 @@ w3RemoveClass(element, name) {
 
   cap8() {
     $("#cap8").toggle();
+    document.getElementById('rw1').scrollIntoView();
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -516,6 +530,7 @@ w3RemoveClass(element, name) {
   }
   cap9() {
     $("#cap9").toggle();
+    document.getElementById('rw1').scrollIntoView();
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";

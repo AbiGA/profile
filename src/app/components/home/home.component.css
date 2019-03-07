@@ -64,6 +64,11 @@ p {
     bottom: 0;
     left: 5%;
 }
+
+#rw1 h6 {
+  cursor: pointer;
+}
+
 #cap1, #cap2, #cap3, #cap4, #cap5, #cap6, #cap7, #cap8, #cap9 {
     display: none;
 }
