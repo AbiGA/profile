@@ -88,9 +88,9 @@ function scrollFunction() {
         );
         document.getElementById("menu-text").style.backgroundRepeat="none";
         document.getElementById("menu-text").style.backgroundSize="cover";
-        setTimeout(nextBackground, 5000);
+        setTimeout(nextBackground, 6000);
         }
-        setTimeout(nextBackground, 5000);
+        setTimeout(nextBackground, 6000);
         body.css('background', backgrounds[0]);
         document.getElementById("menu-text").style.backgroundRepeat="none";
         document.getElementById("menu-text").style.backgroundSize="cover";
@@ -114,8 +114,8 @@ search (c) {
   var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("txt-search");
     filter = c.toLowerCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
+    ul = document.getElementById("myrow");
+    li = ul.getElementsByClassName("col-6");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("img")[0];
         txtValue = a.className;
@@ -440,7 +440,9 @@ w3RemoveClass(element, name) {
   }
   cap4() {
     $("#cap4").toggle();
-    document.getElementById('rw1').scrollIntoView();
+    document.getElementById('rw1').scrollIntoView({
+      behavior: 'smooth'
+    });
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -457,7 +459,9 @@ w3RemoveClass(element, name) {
   }
   cap5() {
     $("#cap5").toggle();
-    document.getElementById('rw1').scrollIntoView();
+    document.getElementById('rw1').scrollIntoView({
+      behavior: 'smooth'
+    });
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -474,7 +478,9 @@ w3RemoveClass(element, name) {
   }
   cap6() {
     $("#cap6").toggle();
-    document.getElementById('rw1').scrollIntoView();
+    document.getElementById('rw1').scrollIntoView({
+      behavior: 'smooth'
+    });
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -492,7 +498,9 @@ w3RemoveClass(element, name) {
 
   cap7() {
     $("#cap7").toggle();
-    document.getElementById('rw1').scrollIntoView();
+    document.getElementById('rw1').scrollIntoView({
+      behavior: 'smooth'
+    });
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -511,7 +519,9 @@ w3RemoveClass(element, name) {
 
   cap8() {
     $("#cap8").toggle();
-    document.getElementById('rw1').scrollIntoView();
+    document.getElementById('rw1').scrollIntoView({
+      behavior: 'smooth'
+    });
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";
@@ -530,7 +540,9 @@ w3RemoveClass(element, name) {
   }
   cap9() {
     $("#cap9").toggle();
-    document.getElementById('rw1').scrollIntoView();
+    document.getElementById('rw1').scrollIntoView({
+      behavior: 'smooth'
+    });
     document.getElementById("cap1").style.display="none";
     document.getElementById("cap2").style.display="none";
     document.getElementById("cap3").style.display="none";

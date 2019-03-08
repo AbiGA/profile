@@ -8,7 +8,7 @@
 }
 .menu-text {
    /* background-image: url(''); */
-    padding-top: 17%;
+    /* padding-top: 17%; */
     font-size: 14px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,17 +22,19 @@ p {
 }
 #p1 {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     text-align: justify;
     background: #021f2e;
-    padding: 1%;
+    padding: 2%;
+    opacity: 0.95;
 }
 #p2, #p3, #p4 {
     display: none;
-    width: 50%;
+    width: 100%;
     text-align: justify;
     background: #021f2e;
-    padding: 1%;
+    padding: 2%;
+    opacity: 0.95;
 }
 #menu1 {
   opacity: 1;
@@ -228,8 +230,10 @@ h3,h6 {
 }
 .popup {
     position: relative;
-    padding-top: 10%;
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
 }
 .featuredbox {
     position: absolute;
@@ -263,17 +267,46 @@ h3 {
 #box {
   display: block;
 }
-.box {
-  padding-top: 10%;
-  width: 100%; padding-left: 3%; height: 100%; background-color: #3C5B7C
+.video {
+  width: 100%;
+  height: 100vh;
 }
+.box {
+    padding-top: 10%;
+    width: 100%; padding-left: 3%; height: 100%; background-color: #3C5B7C;
+    display: flex;
+    padding: 2%;
+    padding-left: 7%;
+    align-items: left;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.selectclients .col {
+  padding-left: 19%;
+  padding-right: 19%;
+}
+
+@media(max-width: 1366px) {
+  ul#deskul {
+    top: 0 !important;
+  }
+}
+
 @media(max-width: 1024px) {
   .featuredbox {
     top: 10%;
   }
+  .row_intro {
+    top: 35% !important;
+  }
+  .d_logo {
+    width: 100% !important;
+  }
 }
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     #p1,#p2,#p3 {
       width: 100% !important;
     }
@@ -299,6 +332,9 @@ h3 {
   #rw1[_ngcontent-c1] img[_ngcontent-c1], #rw2[_ngcontent-c1] img[_ngcontent-c1] {
     width: 80% !important;
 }
+.video, #box, .videorow {
+  height: 50vh !important;
+}
 .featuredbox {
   position: initial;
   background: none;
@@ -322,6 +358,9 @@ h3 {
   @media (max-width: 678px) {
     .menu img {
       width: 30%;
+    }
+    .video, #box, .videorow {
+      height: 50vh !important;
     }
     .featuredbox {
       display: block;
