@@ -178,7 +178,7 @@ p {
   }
 
   img.images {
-    width: 50%;;
+    width: 80%;;
   }
 
   .icon {
@@ -359,6 +359,12 @@ h3 {
     .menu img {
       width: 30%;
     }
+    .selectclients {
+      text-align: center;
+    }
+    .capabilities_header {
+      display: none;
+    }
     .video, #box, .videorow {
       height: 50vh !important;
     }
@@ -511,7 +517,7 @@ a:hover, a:active {
     padding-bottom: 5%;
   }
   img.images {
-    width: 70%;
+    width: 100%;
 }
 .categories {
   display: none;
