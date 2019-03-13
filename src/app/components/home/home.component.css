@@ -1,6 +1,69 @@
 .top {
     height: 100vh;
 }
+.card-body {
+  min-height: 490px;
+  color: white;
+  background-color: #5d3443;
+  border-top: 7px solid #3C5B7C;
+}
+#card-body2,#card-body4 {
+  border-top: 7px solid #f1b440;
+}
+.item {
+  height: auto;
+}
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  display: none;
+}
+.maindiv {
+  display: inline-flex;
+  width: 100%;
+  overflow: hidden;
+}
+.testimonials_row {
+  padding-left: 19%;
+  padding-right: 19%;
+}
+#read_more_testimonial_1,#read_more_testimonial_2,#read_more_testimonial_3,#read_more_testimonial_4,#read_more_testimonial_5,#read_more_testimonial_6 {
+  display: none;
+}
+#text_to_hide_1,#text_to_hide_2,#text_to_hide_3,#text_to_hide_4,#text_to_hide_5,#text_to_hide_6 {
+  display: block;
+}
+#less1,#less2,#less3,#less4,#less5,#less6 {
+  display: none;
+}
+#div1 {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+#div1 a img, #div2 a img {
+  max-height: 238px;
+  width: auto !important;
+}
+#div2 {
+  display: inline-flex;
+  animation: marquee2 30s linear infinite;
+  animation-delay: 15s;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
 
 .menu {
     text-align: center;
@@ -358,6 +421,23 @@ h3 {
   @media (max-width: 678px) {
     .menu img {
       width: 30%;
+    }
+    b, strong {
+      font-weight: normal;
+  }
+
+    .testimonials_row {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    /* .card-body1,.card-body2,.card-body3,.card-body4,.card-body5,.card-body6 {
+      max-height: 470px;
+    } */
+    #read_more_testimonial_1,#read_more_testimonial_2,#read_more_testimonial_3,#read_more_testimonial_4,#read_more_testimonial_5,#read_more_testimonial_6 {
+      display: block;
+    }
+    #text_to_hide_1, #text_to_hide_2, #text_to_hide_3, #text_to_hide_4, #text_to_hide_5, #text_to_hide_6 {
+      display: none;
     }
     .selectclients {
       text-align: center;

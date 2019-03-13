@@ -11,6 +11,35 @@ export class HomeComponent implements OnInit {
   constructor() {
    // this.filterSelection("all");
   }
+  mySlideOptions={
+    items: 1,
+    dots: true,
+    nav: false,
+    margin: 20,
+    loop: false,
+   navText : ["<i style='display: none;' class='fa fa-chevron-left'></i>","<i style='display: none;' class='fa fa-chevron-right'></i>"],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 1,
+        nav: true
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        loop: true
+      },
+      1500: {
+        items: 2,
+        nav: true,
+        loop: true
+      }
+    }
+  };
 //   mySlideImages = [1,2,3].map((i)=> 'https://picsum.photos/640/480?image=${i}');
 // myCarouselImages =[1,2,3,4,5,6].map((i)=>'https://picsum.photos/640/480?image=${i}');
 // mySlideOptions={
@@ -23,33 +52,59 @@ export class HomeComponent implements OnInit {
 // myCarouselOptions={items: 3, dots: true, nav: true};
 
 
-// images= [
-//   {
-//     url:  "../../../assets/Hero-Image.png",
-//     caption: "Jolven",
-//     detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
-//   },
-//   {
-//     url: "../../../assets/Crack.png",
-//     caption: "Jolven",
-//     detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
-//   },
-//   {
-//     url:  "../../../assets/Hero-Image.png",
-//     caption: "Jolven",
-//     detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
-//   },
-//   {
-//     url:  "../../../assets/Hero-Image.png",
-//     caption: "Jolven",
-//     detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
-//   }
-// ]
+images= [
+  {
+    url:  "../../../assets/Hero-Image.png",
+    caption: "Jolven",
+    detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
+  },
+  {
+    url: "../../../assets/Crack.png",
+    caption: "Jolven",
+    detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
+  },
+  {
+    url:  "../../../assets/Hero-Image.png",
+    caption: "Jolven",
+    detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
+  },
+  {
+    url:  "../../../assets/Hero-Image.png",
+    caption: "Jolven",
+    detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
+  }
+]
 
 
   ngOnInit() {
     $(document).ready(function(){
       $(function() {
+        $("#div1").mouseover(function(){
+          document.getElementById("div1").style.webkitAnimationPlayState = "paused";
+          document.getElementById("div2").style.webkitAnimationPlayState = "paused";
+          document.getElementById("div1").style.animationPlayState = "paused";
+          document.getElementById("div2").style.animationPlayState = "paused";
+        });
+        $("#div1").mouseleave(function(){
+          document.getElementById("div1").style.webkitAnimationPlayState = "running";
+          document.getElementById("div2").style.webkitAnimationPlayState = "running";
+          document.getElementById("div1").style.animationPlayState = "running";
+          document.getElementById("div2").style.animationPlayState = "running";
+        });
+
+        $("#div2").mouseover(function(){
+          document.getElementById("div1").style.webkitAnimationPlayState = "paused";
+          document.getElementById("div2").style.webkitAnimationPlayState = "paused";
+          document.getElementById("div1").style.animationPlayState = "paused";
+          document.getElementById("div2").style.animationPlayState = "paused";
+        });
+        $("#div2").mouseleave(function(){
+          document.getElementById("div1").style.webkitAnimationPlayState = "running";
+          document.getElementById("div2").style.webkitAnimationPlayState = "running";
+          document.getElementById("div1").style.animationPlayState = "running";
+          document.getElementById("div2").style.animationPlayState = "running";
+        });
+
         window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -563,6 +618,78 @@ w3RemoveClass(element, name) {
   scroll () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  show1 () {
+    if (document.getElementById('read_more_testimonial_1').innerHTML === "Read More..."){
+      document.getElementById('read_more_testimonial_1').innerHTML = "Read Less...";
+      document.getElementById('text_to_hide_1').style.display="block";
+    }
+    else {
+      document.getElementById('read_more_testimonial_1').innerHTML = "Read More...";
+      document.getElementById('text_to_hide_1').style.display="none";
+    }
+  }
+
+  show2 () {
+    if (document.getElementById('read_more_testimonial_2').innerHTML === "Read More..."){
+      document.getElementById('read_more_testimonial_2').innerHTML = "Read Less...";
+      document.getElementById('text_to_hide_2').style.display="block";
+    }
+    else {
+      document.getElementById('read_more_testimonial_2').innerHTML = "Read More...";
+      document.getElementById('text_to_hide_2').style.display="none";
+    }
+  }
+
+  show3 () {
+    if (document.getElementById('read_more_testimonial_3').innerHTML === "Read More..."){
+      document.getElementById('read_more_testimonial_3').innerHTML = "Read Less...";
+      document.getElementById('text_to_hide_3').style.display="block";
+    }
+    else {
+      document.getElementById('read_more_testimonial_3').innerHTML = "Read More...";
+      document.getElementById('text_to_hide_3').style.display="none";
+    }
+  }
+
+  show4 () {
+    if (document.getElementById('text_to_hide_4').style.display != "block") {
+      document.getElementById('text_to_hide_4').style.display = "block";
+    }
+    else {
+      document.getElementById('text_to_hide_4').style.display = "none";
+    }
+    if (document.getElementById('read_more_testimonial_4').innerHTML === "Read More..."){
+      document.getElementById('read_more_testimonial_4').innerHTML = "Read Less...";
+      document.getElementById('text_to_hide_4').style.display="block";
+    }
+    else {
+      document.getElementById('read_more_testimonial_4').innerHTML = "Read More...";
+      document.getElementById('text_to_hide_4').style.display="none";
+    }
+  }
+
+  show5 () {
+    if (document.getElementById('read_more_testimonial_5').innerHTML === "Read More..."){
+      document.getElementById('read_more_testimonial_5').innerHTML = "Read Less...";
+      document.getElementById('text_to_hide_5').style.display="block";
+    }
+    else {
+      document.getElementById('read_more_testimonial_5').innerHTML = "Read More...";
+      document.getElementById('text_to_hide_5').style.display="none";
+    }
+  }
+
+  show6 () {
+    if (document.getElementById('read_more_testimonial_6').innerHTML === "Read More..."){
+      document.getElementById('read_more_testimonial_6').innerHTML = "Read Less...";
+      document.getElementById('text_to_hide_6').style.display="block";
+    }
+    else {
+      document.getElementById('read_more_testimonial_6').innerHTML = "Read More...";
+      document.getElementById('text_to_hide_6').style.display="none";
+    }
   }
 
 }
