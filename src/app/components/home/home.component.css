@@ -283,7 +283,7 @@ p {
   /* -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
   transition: transform .1s, filter 1.5s ease-in-out;
-  -webkit-transition: transform .1s, filter 1.5s ease-in-out; 
+  -webkit-transition: transform .1s, filter 1.5s ease-in-out;
   -moz-transition: transform .1s, filter 1.5s ease-in-out; 
   -ms-transition: transform .1s, filter 1.5s ease-in-out; 
   -o-transition: transform .1s, filter 1.5s ease-in-out;  */
@@ -366,7 +366,7 @@ option {
   display: none;
 }
 h3 {
-  font-size: 20px !important;
+  font-size: 25px !important;
 }
 .featuredbox {
   display: none;
@@ -649,6 +649,9 @@ li {
   #myUL li {
     width: 50%;
     float: left;
+  }
+  .select-client-desk {
+    display: none;
   }
   .category_dropdown {
     padding-bottom: 5%;

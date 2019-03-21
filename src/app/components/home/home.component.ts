@@ -8,9 +8,8 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {
-   // this.filterSelection("all");
-  }
+  constructor () { }
+
   mySlideOptions={
     items: 1,
     dots: true,
@@ -20,7 +19,7 @@ export class HomeComponent implements OnInit {
     autoplayTimeout: 3000,
     margin: 20,
     loop: false,
-   navText : ["<i style='display: none;' class='fa fa-chevron-left'></i>","<i style='display: none;' class='fa fa-chevron-right'></i>"],
+    navText : ["<i style='display: none;' class='fa fa-chevron-left'></i>","<i style='display: none;' class='fa fa-chevron-right'></i>"],
     responsiveClass: true,
     responsive: {
       0: {
@@ -43,41 +42,6 @@ export class HomeComponent implements OnInit {
       }
     }
   };
-//   mySlideImages = [1,2,3].map((i)=> 'https://picsum.photos/640/480?image=${i}');
-// myCarouselImages =[1,2,3,4,5,6].map((i)=>'https://picsum.photos/640/480?image=${i}');
-// mySlideOptions={
-//   items: 3, 
-//   dots: false,
-//   nav: true,
-//   navText: ["<i style='position: absolute;top: 45%;left: 2%;' class='fa fa-long-arrow-left'></i>","<i style='position: absolute;top: 45%;right: 2%;' class='fa fa-long-arrow-right'></i>"],
-//   loop: true
-// };
-// myCarouselOptions={items: 3, dots: true, nav: true};
-
-
-images= [
-  {
-    url:  "../../../assets/Hero-Image.png",
-    caption: "Jolven",
-    detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
-  },
-  {
-    url: "../../../assets/Crack.png",
-    caption: "Jolven",
-    detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
-  },
-  {
-    url:  "../../../assets/Hero-Image.png",
-    caption: "Jolven",
-    detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
-  },
-  {
-    url:  "../../../assets/Hero-Image.png",
-    caption: "Jolven",
-    detail: "It's Classified How To Utilize Free Classified Ad Sites To Boost Business"
-  }
-]
-
 
   ngOnInit() {
     $(document).ready(function(){
@@ -128,45 +92,9 @@ function scrollFunction() {
     document.getElementById("arrow").style.display = "none";
   }
 }
-      //  var body = $('.menu-text');
-      //   var backgrounds;
-      //   function detect(x) {
-      //     if (x.matches) {
-      //       backgrounds = new Array(
-      //         'url(../../../assets/Hero-Image_mobile.png)',
-      //         'url(../../../assets/MCrack.png)'
-      //         );
-      //     } else {
-      //       backgrounds = new Array(
-      //         'url(../../../assets/isometric grid_Final render-low.mp4)',
-      //         'url(../../../assets/Crack.png)'
-      //         );
-      //     }
-      //   }
-
-
-      //     var x = window.matchMedia("(max-width: 678px)")
-      //     detect(x) // Call listener function at run time
-      //     x.addListener(detect) // Attach listener function on state changes
-      //   var current = 0;
-        
-      //   function nextBackground() {
-      //   body.css(
-      //   'background',
-      //   backgrounds[current = ++current % backgrounds.length]
-      //   );
-      //   document.getElementById("menu-text").style.backgroundRepeat="none";
-      //   document.getElementById("menu-text").style.backgroundSize="cover";
-      //   setTimeout(nextBackground, 6000);
-      //   }
-      //   setTimeout(nextBackground, 6000);
-      //   body.css('background', backgrounds[0]);
-      //   document.getElementById("menu-text").style.backgroundRepeat="none";
-      //   document.getElementById("menu-text").style.backgroundSize="cover";
         });
     });
   }
-
 search (c, dy) {
   var filter, ul, li, a, i, txtValue;
     var ir= document.getElementById("myUL1").getElementsByTagName("li")
