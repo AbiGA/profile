@@ -47,6 +47,9 @@ export class HomeComponent implements OnInit {
     $(document).ready(function(){
       $(function() {
 
+        let videoPlayer = <HTMLVideoElement> document.getElementById('vid');
+        videoPlayer.play(); 
+
         $("#menu1, #menu2, #menu3").mouseover(function() {
           document.getElementById("menu1").style.webkitAnimationPlayState = "paused";
           document.getElementById("menu1").style.animationPlayState = "paused";
@@ -172,6 +175,10 @@ search1 (event: any) {
     document.getElementById("readmore").style.display="none";
   }
   sh3() {
+    var i = document.getElementById("p3").querySelectorAll("p");
+    i[0].style.cssText = 'font-size:14px !important; display: block;';
+    i[1].style.cssText = 'font-size:14px !important; display: block;';
+    i[2].style.cssText = 'font-size:14px !important; display: block;';
     document.getElementById("p1").style.display="none";
     document.getElementById("p2").style.display="none";
     document.getElementById("p3").style.display="inline-block";
@@ -206,6 +213,11 @@ search1 (event: any) {
 
   readmore () {
     document.getElementById("readmore").style.display="block";
+    var i = document.getElementById("p3").querySelectorAll("p");
+    i[0].style.cssText = 'font-size:12px !important; display: block;';
+    i[1].style.cssText = 'font-size:12px !important; display: block;';
+    i[2].style.cssText = 'font-size:12px !important; display: block;';
+    // $("p3").css("font-size","12px");
     document.getElementById("readspan").style.display="none";
   }
 
@@ -334,7 +346,6 @@ search1 (event: any) {
     document.getElementById("rw1").style.display="flex";
     document.getElementById("cap6").style.display="none";
   }
-
   cap7() {
     $("#cap7").toggle();
     document.getElementById('rw1').scrollIntoView({
@@ -352,7 +363,6 @@ search1 (event: any) {
     document.getElementById("rw1").style.display="flex";
     document.getElementById("cap7").style.display="none";
   }
-
   cap8() {
     $("#cap8").toggle();
     document.getElementById('rw1').scrollIntoView({

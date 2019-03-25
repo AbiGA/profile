@@ -3,18 +3,14 @@
 }
 .card-body {
   color: black;
+  padding-bottom: 0;
 }
-
 #mp1 p, #mp2 p, #mp3 p {
   color: black !important;
 }
 .item p {
   height: auto;
   color: black !important;
-}
-.owl-theme .owl-nav {
-  margin-top: 10px;
-  display: none;
 }
 h5 {
   align-items: center;
@@ -48,7 +44,6 @@ video {
   height: 100%;
   /* background: transparent url('../../../assets/portfolio/portfolio_1/Kandavara_Big.png') 50% 50% / cover no-repeat ; */
 }
-
 #div1 {
   display: inline-flex;
   animation: marquee 30s linear infinite;
@@ -161,7 +156,6 @@ p {
     left: 5%;
 }
 
-
 #cap1, #cap2, #cap3, #cap4, #cap5, #cap6, #cap7, #cap8, #cap9 {
     display: none;
 }
@@ -171,6 +165,9 @@ p {
 .col-xs-12.col-sm-4.w3-padding-32.w3-red.w3-circle.w3-center {
   cursor: pointer;
   user-select: none;
+}
+h6 {
+  color: darkgrey;
 }
 
   #myInput {
@@ -327,7 +324,7 @@ h3,h6 {
   width: auto !important;
 }
 .capabilities_header {
-  padding-left: 16%;
+  padding-left: 19%;
 }
 .categories {
   display: flex;
@@ -407,7 +404,16 @@ h3 {
 .mallet img{
   width: 55%;
 }
-
+.testimonial_container {
+  padding-top: 5%;
+}
+.udr {
+  padding-left: 4%;
+  border-top: 1px solid darkgrey;
+  width: 13px !important;
+  height: 1px;
+  margin-left: 15.5%;
+}
 @media(max-width: 1366px) {
   ul#deskul {
     top: 0 !important;
@@ -445,11 +451,14 @@ h3 {
     #deskul {
       display: none !important;
     }
+    .udr {
+      padding-left: 10%;
+    }
     .marquee_col {
       padding: 0;
     }
     #intro {
-      padding-left: 5%;
+      padding-left: 16%;
     }
     .cap_intro {
       width: 70%;
@@ -494,15 +503,63 @@ h3 {
     .menu img {
       width: 30%;
     }
+    .contact_container {
+      padding-top: 10% !important;
+    }
     .mallet img{
       width: 80%;
     }
+    .contactcol {
+      padding-left: 0 !important;
+    }
+    .udr_desk {
+      display: none;
+    }
+    .icn1 {
+      padding-top: 5%;
+    }
+    .icn2 {
+      padding-top: 10%;
+    }
+    .social {
+      padding-top: 7%;
+    }
+    .udr {
+      margin-left: 0;
+      margin: 0 auto !important;
+      padding-left: 15%;
+    }
+    h3 {
+      padding-left: 0 !important;
+      text-align: center;
+    }
+    .mobcategories {
+      padding-top: 4%;
+    }
+    #intro {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: black;
+    padding-top:3%;
+    padding-bottom: 4%;
+  }
+  .capabilities>.row>.col {
+    padding-left: 5% !important;
+    padding-right: 5%;
+  }
     b, strong {
       font-weight: normal;
+  }
+  .testimonial_container {
+    padding-top: 15%;
   }
   /* video {
     height: 50%;
   } */
+  h6 {
+    font-size: 14px;
+    color: darkgrey;
+  }
     .testimonials_row {
       padding-left: 15px;
       padding-right: 15px;
@@ -586,10 +643,6 @@ li {
     right:-1px;
     top:2px;
 }
-    #intro {
-      color: black;
-      padding-top:0;
-    }
     .capabilities_header {
       padding-left: 0;
     }
@@ -719,12 +772,18 @@ li#intro {
   .featuredbox span {
     margin-left: -12%;
   }
+  h6 {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 320px) {
   li#intro {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  h6 {
+    font-size: 12px;
   }
   .featuredbox span {
     margin-left: 0;
